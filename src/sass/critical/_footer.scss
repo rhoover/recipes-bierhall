@@ -1,0 +1,27 @@
+
+@use "../core" as core;
+
+.footer {
+  grid-column: 1/4;
+  padding: 8px;
+  border-top: 1px solid core.colorfunction(green, dark25);
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  justify-content: space-evenly;
+  background-color: rgba(core.colorfunction(green, base), 0.20);
+  z-index: 55;
+  &-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    &-text {
+      color: core.colorfunction(green, base);
+    }
+  }
+  &-home-icon {
+    fill: core.colorfunction(green, base);
+    padding-right: 8px;
+  }
+}

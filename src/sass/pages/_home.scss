@@ -1,0 +1,84 @@
+@use "../component-helpers" as components;
+@use "../helpers" as helpers;
+@use "../core" as core;
+
+.home {
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  row-gap: 32px;
+  height: 80vh;
+  &-login {
+    width: 100%;
+    align-self: center;
+    &-button {
+      @extend %recipe-buttons;
+      padding: 0px;
+    }
+    &-dialog {
+      @extend %dialog;
+      &-close {
+        @extend %recipe-buttons;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+  }
+  &-item {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 7.2px;
+    border: 2px solid core.colorfunction(green, light15);
+    color: core.colorfunction(white, base);
+    text-decoration: none;
+    cursor: pointer;
+    @extend %box-shadow;
+    @extend %animate-helper;
+    &-image {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-text {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100%;
+      padding: 0.75rem 0px;
+      align-self: center;
+      text-align: center;
+      background-color: rgba(core.colorfunction(green, base), 0.7);
+    }
+  }
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  width: 95%;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid core.colorfunction(black, light25);
+  padding-left: 8px;
+  transition: box-shadow 0.25s;
+  &:focus {
+    box-shadow: 0 0 15px rgba(core.colorfunction(black, base),0.5)
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}

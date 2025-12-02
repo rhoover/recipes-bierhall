@@ -1,0 +1,117 @@
+@use "../component-helpers" as components;
+@use "../helpers" as helpers;
+@use "../core" as core;
+
+
+.create {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.head {
+  text-align: center;
+  padding-top: 24px;
+}
+
+input, select {
+  width: 95%;
+  border-radius: 4px;
+  &:focus-visible {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+input[type="text"] {
+  background: transparent;
+  border: 1px solid core.colorfunction(black, light25);
+  padding-left: 8px;
+  transition: box-shadow 0.25s;
+  &:focus {
+    box-shadow: 0 0 15px rgba(core.colorfunction(black, base),0.5)
+  }
+}
+
+.button {
+  &-add {
+    @extend %recipe-buttons;
+  }
+}
+
+#recipe {
+  &-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &-ingredients {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &-procedures {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  &-notes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+
+.recipe-review-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid core.colorfunction(green, light25);
+  border-radius: 8px;
+  & h3 {
+    border-bottom: 1px solid core.colorfunction(green, light25);
+    &:nth-of-type(2) {
+      padding-top: 16px;
+    }
+  }
+}
+
+.submit {
+  @extend %recipe-buttons;
+}
+
+.review {
+  @extend %recipe-buttons;
+}
+
+.dialog {
+  &-description {
+    @extend %dialog;
+  }
+  &-close {
+    @extend %recipe-buttons;
+  }
+  &-ingredients {
+    @extend %dialog;
+  }
+  &-procedures {
+    @extend %dialog;
+    height: 450px;
+    overflow: scroll;
+  }
+  &-notes {
+    @extend %dialog;
+    height: 450px;
+    overflow: scroll;
+  }
+  &-review {
+    @extend %dialog;
+    height: 450px;
+  }
+  &-submit {
+    @extend %dialog;
+  }
+}

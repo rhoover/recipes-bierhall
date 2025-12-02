@@ -1,0 +1,119 @@
+---
+layout: layouts/base.njk
+title: Create A Recipe
+permalink: "/pages/create.html"
+---
+
+<h1 class="fluid-text fluid-text--50 head">Create A New Recipe</h1>
+
+
+<p>First, do the recipe data entry:</p>
+<button class="button-add fluid-text fluid-text--20" data-open="addDescription">Create Recipe Description</button>
+
+<p>Then, do the procedures:</p>
+<button class="button-add fluid-text fluid-text--20" data-open="addProcedures">Create Recipe Procedures</button>
+
+<p>Then, do the notes:</p>
+<button class="button-add fluid-text fluid-text--20" data-open="addNotes">Create Recipe Notes</button>
+
+<p>Review the data you've entered so far:</p>
+<button class="review fluid-text fluid-text--20" data-open="review">Review Data Entry</button>
+
+<p>When the data entry above is all done:</p>
+<button class="submit fluid-text fluid-text--20" data-open="submit">Submit The Recipe</button>
+
+<dialog class="dialog-description" data-description>
+  <form id="recipe-description">
+    <label for="name">Recipe Name
+      <input type="text" id="name" name="name" class="fluid-text fluid-text--20" desc/>
+    </label>
+
+    <label for="category">Recipe Category
+      <select type="select" id="category" name="category" class="fluid-text fluid-text--20" desc>
+        <option value="choose" disabled selected>Choose One</option>
+        {% for category in categories %}
+        <option value="{{ category.value }}">{{ category.text }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <button class="dialog-close fluid-text fluid-text--20" data-close="description">Enter Description</button>
+  </form>
+</dialog>
+
+<dialog class="dialog-ingredients" data-ingredient>
+  <form id="recipe-ingredients">
+
+    <label for="ingredient">Ingredient
+      <input type="text" id="ingredient" name="ingredient" class="fluid-text fluid-text--20" ing />
+    </label>
+
+    <label for="measurement">Measurement Type
+      <select type="select" id="measurement" name="measurement" class="fluid-text fluid-text--20" ing>
+        <option value="choose" disabled selected>Choose One</option>
+        <option value="teaspoon">Teaspoon(s)</option>
+        <option value="tablespoon">Tablepoon(s)</option>
+        <option value="each">Each</option>
+        <option value="cup">Cup(s)</option>
+        <option value="quart">Quart(s)</option>
+        <option value="gallon">Gallon(s)</option>
+        <option value="oz">Ounces(s)</option>
+        <option value="lbs">Pound(s)</option>
+        <option value="bu">Bunch(s)</option>
+      </select>
+    </label>
+
+    <label for="amountslow">Amount Slow
+      <input type="text" id="amountslow" name="amount-slow" class="fluid-text fluid-text--20" ing />
+    </label>
+
+    <label for="amountbusy">Amount Busy
+      <input type="text" id="amountbusy" name="amount-busy" class="fluid-text fluid-text--20" ing />
+    </label>
+
+    <label for="amountstandard">Amount Standard
+      <input type="text" id="amountstandard" name="amount-standard" class="fluid-text fluid-text--20" ing />
+    </label>
+
+    <button class="dialog-close fluid-text fluid-text--20" data-close="ingredient">Enter Ingredient</button>
+  </form>
+</dialog>
+
+<dialog class="dialog-procedures" data-procedure>
+  <p>Type in the procedures <b>one step at a time</b>. Then tap the Add A Step button below to type in the next step. When you're all done, tap the Enter Me button below.</p>
+  <form id="recipe-procedures">
+    <label for="procedure">Procedure
+      <input type="text" id="procedure" name="procedure" class="fluid-text fluid-text--20" proc />
+    </label>
+  </form>
+  {# This is outside the form element because I am adding inputs with js #}
+  <button class="dialog-close fluid-text fluid-text--20" data-add="procAdd">Add A Step</button>
+  <button class="dialog-close fluid-text fluid-text--20" data-close="procedure">Enter Procedures</button>
+</dialog>
+
+<dialog class="dialog-notes" data-notes>
+  <p>Type in the notes <b>one at a time</b>. Then tap the Add A Note button below to type in the next note. When you're all done, tap the Enter Me button below.</p>
+  <form id="recipe-notes">
+    <label for="notes">Notes
+      <input type="text" id="notes" name="notes" class="fluid-text fluid-text--20" notes />
+    </label>
+  </form>
+  {# This is outside the form element because I am adding inputs with js #}
+  <button class="dialog-close fluid-text fluid-text--20" data-add="noteAdd">Add A Note</button>
+  <button class="dialog-close fluid-text fluid-text--20" data-close="notes">Enter Notes</button>
+</dialog>
+
+<dialog class="dialog-review" data-review>
+  <section class="recipe-review">
+    <p>Review your data so far:</p>
+    <div class="recipe-review-data"></div>
+  </section>
+  <button class="dialog-close fluid-text fluid-text--20" data-close="review">Close Me</button>
+</dialog>
+
+<dialog class="dialog-submit" data-submit>
+  <p>Congratulations, another recipe added!</p>
+  <button class="dialog-close fluid-text fluid-text--20" data-close="submit">Close Me</button>
+</dialog>
+
+

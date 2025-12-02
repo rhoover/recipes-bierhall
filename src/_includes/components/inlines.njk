@@ -1,0 +1,56 @@
+   {#########################################}
+  {# Back Button #}
+  {#########################################}
+  {% set js %}
+    {% include "../../js/inline/backbutton.js" %}
+  {% endset %}
+  <!-- back button behavior -->
+  <script>
+    {{ js | jsmin | safe }}
+  </script>  
+  
+  {#########################################}
+  {# Home Page Behavior #}
+  {#########################################}
+  {% if page.fileSlug == '' %}
+    <!-- home login behavior -->
+    {% set js %}
+      {% include "../../js/inline/login.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+  {% endif %}
+
+  {#########################################}
+  {# Create Page Behavior #}
+  {#########################################}
+  {% if page.fileSlug == 'create' %}
+    <!-- recipe creation behavior -->
+    {% set js %}
+      {% include "../../js/inline/create.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+  {% endif %}
+
+  {#########################################}
+  {# List Page Behavior #}
+  {#########################################}
+  {% if page.fileSlug == 'list' %}
+    <!-- recipe search behavior -->
+    {% set js %}
+      {% include "../../js/inline/search-list.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    {% set js %}
+      {% include "../../js/inline/scroll-top.js" %}
+    {% endset %}
+    <!-- scroll button behavior -->
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+  {% endif %}

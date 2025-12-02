@@ -1,0 +1,36 @@
+// this is a sticky header and sticky footer implmentation
+// https://css-tricks.com/how-to-use-css-grid-for-sticky-headers-and-footers/
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(16px, 1fr) minmax(auto, 1120px) minmax(16px, 1fr);
+  grid-template-rows: auto 1fr auto;
+  font-family: "assistant", sans-serif;
+
+  & > header {
+    grid-row: 1 / 2;
+  }
+
+  & > main {
+    grid-row: 2 / 3;
+    padding-top: 80px;
+  }
+
+  & > footer {
+    grid-row: 3 / 4;
+  }
+
+  & > * {
+    grid-column: 2 / 3;
+  }
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 1.75s;
+}

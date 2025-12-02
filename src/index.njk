@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: Recipes - Home
+---
+
+<section class="home-login">
+  <button class="home-login-button fluid-text fluid-text--50" data-click="open">Log In</button>
+</section>
+
+<section class="home-content">
+  <a href="/pages/list.html" class="home-item">
+    <img src="/img/home/reading-recipe.webp" class="home-item-image" decoding="async" alt="Sunny Flight of Beers">
+    <p class="home-item-text fluid-text fluid-text--50">Recipe List</p>
+  </a>
+  {# <a href="/pages/edit.html" class="home-item">
+    <img src="/img/home/editing-recipe.webp" class="home-item-image" decoding="async" alt="Apples In A Basket">
+    <p class="home-item-text fluid-text fluid-text--40">Edit A Recipe</p>
+  </a> #}
+  <a href="/pages/create.html" class="home-item">
+    <img src="/img/home/hand-on-computer.webp" class="home-item-image" decoding="async" alt="Grapes In A Sunny Vineyard">
+    <p class="home-item-text fluid-text fluid-text--50">Create A Recipe</p>
+  </a>
+</section>
+
+<dialog class="home-login-dialog" data-click="dialog">
+  <form id="login">
+    <p>If You Know You Know, Otherwise Go Away</p>
+    <label for="email">Email
+      <input type="email" id="email" name="email" class="fluid-text fluid-text--20"/>
+    </label>
+    <label for="password">Password
+      <input type="text" id="password" name="password" class="fluid-text fluid-text--20" />
+    </label>
+
+    <button class="home-login-dialog-close fluid-text fluid-text--20" data-click="close">Enter Me</button>
+  </form>
+</dialog>

@@ -1,0 +1,136 @@
+@use "../component-helpers" as components;
+@use "../helpers" as helpers;
+@use "../core" as core;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: space-around;
+  padding-top: 124px;
+  &-search {
+    position: relative;
+    background-color: core.colorfunction(blue, light85);
+    &-label {
+      position: absolute;
+      width: max-content;
+      top: -27px;
+      left: 35px;
+    }
+    &-input {
+      line-height: 3.5rem;
+      width: 100%;
+      padding-left: 16px;
+      background: transparent;
+      border-radius: 16px;
+      border: 1px solid core.colorfunction(blue, base);
+      color: inherit;
+      cursor: pointer;
+      &:focus {
+          outline: none;
+          background: transparent;
+      }
+      &:active {
+        outline: none;
+      }
+    }
+    & svg {
+      position: absolute;
+      left: 10px;
+      top: -26px;
+      fill: core.colorfunction(blue, light25);
+      height: 24px;
+      width: 24px;
+    }
+  }
+  &-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  &-header {
+    padding-left: 16px;
+    border-bottom: 1px solid core.colorfunction(green, base);
+    font-weight: 700;
+  }
+  &-card {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    padding: 8px;
+    // border: 1px solid core.colorfunction(green, base);
+    border-radius: 8px;
+    background-color: rgba(core.colorfunction(green, base), .15);
+    &-text {
+      align-self: center;
+    }
+    &-link {
+      text-align: center;
+      align-self: flex-end;
+    }
+    &-icon {
+      align-self: flex-start;
+    }
+  }
+}
+
+.selected {
+  opacity: 1;
+}
+.is-hidden {
+  display: none;
+}
+
+input[type="search" i]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='red'><path d='M202.829 197.172a4 4 0 1 1-5.658 5.656L128 133.658l-69.171 69.17a4 4 0 0 1-5.658-5.656L122.343 128 53.171 58.828a4 4 0 0 1 5.658-5.656L128 122.342l69.171-69.17a4 4 0 0 1 5.658 5.656L133.657 128Z'/></svg>");
+  cursor: pointer;
+}
+
+.scroller {
+  // display: none;
+  opacity: 0;
+  position: fixed;
+  right: 0px;
+  bottom: 32px;
+  width: 65px;
+  height: 65px;
+  border-radius: 30% 0% 0% 30%;
+  background-color: rgba(core.colorfunction(green, base), 0.55);
+  border-left: 1px solid core.colorfunction(green, dark25);
+  border-top: 1px solid core.colorfunction(green, dark25);
+  border-bottom: 1px solid core.colorfunction(green, dark25);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  z-index: 350;
+  @extend %animate-helper;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 14px;
+    left: 17px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-top: .3em solid core.colorfunction(white, light35);
+    border-left: .3em solid core.colorfunction(white, light35);
+  }
+  &-visible {
+    // display: block;
+    opacity: 1;
+  }
+  & p {
+    position: absolute;
+    top: 30px;
+    left: 13px;
+    color: core.colorfunction(white, light35);
+    font-weight: 700;
+  }
+}

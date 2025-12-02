@@ -1,0 +1,11 @@
+@use "../core" as core;
+
+%recipe-buttons {
+    width: 100%;
+    padding: 16px 0px;
+    border-radius: 8px;
+    background: core.colorfunction(green, light65);
+    border: 1px solid core.colorfunction(green, base);
+    font-weight: normal;
+    color: core.colorfunction(green, base);
+  }
