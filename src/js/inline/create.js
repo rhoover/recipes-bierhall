@@ -91,6 +91,7 @@
       break;
     }; // end dialogToOpen
 
+    // for adding inputs inside dialog
     switch (dialogAction) {
       case "procAdd":
         let newProcedure = `
@@ -144,6 +145,7 @@
         ingredientObject.measurement = ingredientData[1].value;
         ingredientObject.amountslow = ingredientData[2].value;
         ingredientObject.amountbusy = ingredientData[3].value;
+        ingredientObject.amountstandard = ingredientData[4].value;
 
         ingredientsArray.push(ingredientObject);
 
