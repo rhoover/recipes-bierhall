@@ -81,7 +81,7 @@
           body: JSON.stringify(serverData)
         })
         .then(response => response.text())
-        .then(data => console.log('success', data))
+        .then(data => console.log('success saving data', data))
         .catch(error => console.error('error', error));
 
         addIngredientsButton.setAttribute("data-open", "addDescription");
