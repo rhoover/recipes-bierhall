@@ -10,7 +10,7 @@ permalink: "/pages/list.html"
 {% for category in categories %} {# this comes from the categories global _data directory #}
   <section class="list-section" data-category="{{ category.value }}">
     <h2 class="list-header fluid-text fluid-text--50">{{ category.text }}</h2>
-    {% for recipe in recipes %}
+    {% for recipe in recipes | sort(attribute='pageslug')%}
       {% if category.value == recipe.category %}  
         <div class="list-card" data-slug="{{ recipe.pageslug }}">
           <p class="list-card-text">{{ recipe.name }}</p>
