@@ -120,6 +120,8 @@
           recipeObject.name = dialogDescriptionElements[0].value;
           recipeObject.category = dialogDescriptionElements[1].value;
         };
+        let pageslug = recipeObject.name.replace(/ /g, "").toLowerCase();
+        recipeObject.pageslug = pageslug;
 
         addIngredientsButton.setAttribute("data-open", "addIngredient");
         addIngredientsButton.innerHTML = "Add Recipe Ingredients";

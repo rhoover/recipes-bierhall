@@ -109,7 +109,7 @@ input[type="text"] {
   }
   &-review {
     @extend %dialog;
-    height: 450px;
+    max-height: 450px;
   }
   &-submit {
     @extend %dialog;
