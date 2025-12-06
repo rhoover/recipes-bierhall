@@ -39,6 +39,14 @@
   {# List Page Behavior #}
   {#########################################}
   {% if page.fileSlug == 'list' %}
+    <!-- recipe list behavior -->
+    {% set js %}
+      {% include "../../js/inline/list.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+
     <!-- recipe search behavior -->
     {% set js %}
       {% include "../../js/inline/search-list.js" %}
@@ -46,6 +54,7 @@
     <script>
       {{ js | jsmin | safe }}
     </script>
+
     {% set js %}
       {% include "../../js/inline/scroll-top.js" %}
     {% endset %}
