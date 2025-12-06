@@ -28,19 +28,18 @@
   let dialogSubmit = document.querySelector('.dialog-submit');  
 
   let serverData;
+
   let recipeObject = {};
+
   let ingredientsArray = [];
+
   let procedureObject = {};
   let procedureArray = [];
+
   let noteObject = {};
   let noteArray = [];
 
-  fetch('https://bierhallrecipes.com/data-recipes/recipes.json')
-    .then(response => response.json())
-    .then( (data) => {
-      serverData = data;
-      console.log('from server:', serverData);
-    });
+
 
   
   // open or close which dialog
@@ -53,7 +52,13 @@
     // opening dialog from button on page
     switch (dialogToOpen) {
       // first two are because the first create button changes names
-      case "addDescription":
+      case "addDescription":  
+        fetch('https://bierhallrecipes.com/data-recipes/recipes.json')
+          .then(response => response.json())
+          .then( (data) => {
+            serverData = data;
+            console.log('from server:', serverData);
+          });
         dialogDescription.showModal();
       break;
       case "addIngredient":
@@ -158,6 +163,7 @@
         <p style="display: list-item; list-style-position: inside">Measurement: ${ingredientObject.measurement}</p>
         <p style="display: list-item; list-style-position: inside">Slow Amount: ${ingredientObject.amountslow}</p>
         <p style="display: list-item; list-style-position: inside">Busy Amount: ${ingredientObject.amountbusy}</p>
+        <p style="display: list-item; list-style-position: inside">Standard Amount: ${ingredientObject.amountstandard}</p>
         `;
 
         formIngredients.reset();
@@ -215,10 +221,11 @@
         dialogReview.close();
       break;
       case "submit":
+        serverData = [];
         dialogSubmit.close();
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
+        // setTimeout(() => {
+        //   window.location.reload();
+        // }, 2000);
       break;
       default:
       break;

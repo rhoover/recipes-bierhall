@@ -11,18 +11,22 @@
   background-color: core.colorfunction(white, light75);
   border: 1px solid core.colorfunction(green, base);
   border-radius: 10.4px;
-  top: -100%;
+  margin: 0px;
+  top: 32px;
+  transform: translateX(-105%);
+  @extend %animate-helper;
   &[open] {
-    @extend %animate-helper;
-    transform: translateY(55%);
+    transform: translateX(5%);
     &::backdrop {
       animation: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards show-backdrop;
     }
   }
-  &:not([open]) {
-    @extend %animate-helper;
-    transform: translateY(-95%);
-  }
+  // &:not([open]) {
+  //   @extend %animate-helper;
+  //   top: 124px;
+  //   // transform: translateY(-95%);
+  //   transform: translateX(120%);
+  // }
   &::backdrop {
     background: rgba(core.colorfunction(blue, base), 0.35);
     backdrop-filter: blur(0.2rem);
