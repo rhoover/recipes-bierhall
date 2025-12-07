@@ -34,10 +34,6 @@
     display: none;
   &-active {
     display: block;
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    // grid-template-rows: max-content;
-    // gap: 24px;
     margin-bottom: 124px;
   }
   }
@@ -53,6 +49,29 @@
         font-weight: 700;
         border-right: 1px solid core.colorfunction(green, base);
       }
+    }
+  }
+  &-procedure {
+    list-style-position: inside;
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid core.colorfunction(green, light25);
+    border-radius: 8px;
+    &::marker {
+      font-weight: 700;
+      padding-right: 16px;
+    }
+    &-list {
+      margin-top: 16px;
+    }
+  }
+  &-note {
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid core.colorfunction(green, light25);
+    border-radius: 8px;
+    &-list {
+      margin-top: 16px;
     }
   }
 }

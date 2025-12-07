@@ -63,3 +63,16 @@
       {{ js | jsmin | safe }}
     </script>
   {% endif %}
+
+  {#########################################}
+  {# Recipe Page Behavior #}
+  {#########################################}
+  {% if page.fileSlug == 'recipe' %}
+    <!-- recipe page behavior -->
+    {% set js %}
+      {% include "../../js/inline/recipe.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+  {% endif %}
