@@ -3,13 +3,6 @@
 
   customElements.define('buttons-row', class extends HTMLElement {
 
-     // deal with any kind of 'on...' event
-     // referenced below
-    // handleEvent(event) {
-      // this[`on${event.type}`](event);
-    // }; // end handleEvent()
-
-
     connectedCallback() {
       // initialize the things
       this.buttonRow = document.querySelector('buttons-row');
@@ -70,9 +63,7 @@
           panel.classList.add('recipe-panel-active');
         };
       }); // end forEach
-
     }; // end togglePanelClasses
-
   }); // end customElements panels-row
 
 })();
