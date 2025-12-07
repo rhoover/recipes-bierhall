@@ -16,8 +16,8 @@
   };
 
   scrollButton.addEventListener('click', scrollBehavior);
-  function scrollBehavior() {
-
+  function scrollBehavior(event) {
+console.log(event.target);
     var scrollMath = function (t, b, c, d) { //t = current time, b = start value, c = change in value, d = duration
       t /= d/2;
       if (t < 1) {
