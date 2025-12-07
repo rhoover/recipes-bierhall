@@ -1,0 +1,58 @@
+@use "../component-helpers" as components;
+@use "../helpers" as helpers;
+@use "../core" as core;
+
+
+.recipe {
+  padding-bottom: 224px;
+  &-header {
+    margin-bottom: 32px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(core.colorfunction(green, base), 0.95);
+  }
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(core.colorfunction(green, base), 0.95);
+  }
+  &-button {
+    padding: 0px 8px;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid core.colorfunction(blue, dark25);
+    border-radius: 8px;
+    background-color: rgba(core.colorfunction(green, base), 0.15);
+    &-active {
+      font-weight: 700;
+      background-color: rgba(core.colorfunction(green, base), 0.55);
+    }
+  }
+  &-panel {
+    display: none;
+  &-active {
+    display: block;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // grid-template-rows: max-content;
+    // gap: 24px;
+    margin-bottom: 124px;
+  }
+  }
+  &-table {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  &-row {
+      line-height: 3rem;
+      border-bottom: 1px solid rgba(core.colorfunction(green, base), 0.95);
+      &-ingredient {
+        text-align: left;
+        font-weight: 700;
+        border-right: 1px solid core.colorfunction(green, base);
+      }
+    }
+  }
+}
