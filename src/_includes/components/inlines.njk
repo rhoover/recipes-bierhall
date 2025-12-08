@@ -39,15 +39,14 @@
   {# List Page Behavior #}
   {#########################################}
   {% if page.fileSlug == 'list' %}
-    <!-- recipe list behavior -->
-    {% set js %}
+    {# {% set js %}
       {% include "../../js/inline/list.js" %}
     {% endset %}
     <script>
       {{ js | jsmin | safe }}
-    </script>
+    </script> #}
 
-    <!-- recipe search behavior -->
+    <!-- list search behavior -->
     {% set js %}
       {% include "../../js/inline/search-list.js" %}
     {% endset %}
