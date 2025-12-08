@@ -13,6 +13,9 @@
     &-button {
       @extend %recipe-buttons;
       padding: 0px;
+      &-in {
+        opacity: .25;
+      }
     }
     &-dialog {
       @extend %dialog;
