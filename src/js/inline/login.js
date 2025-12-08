@@ -11,7 +11,7 @@
 
       if (storedDevice) {
         // unlock the links
-        for (let i = 0; links < array.length; i++) {
+        for (let i = 0; i < links.length; i++) {
           links[i].style.pointerEvents = 'auto';
         };
 
@@ -72,9 +72,9 @@
             logInButton.innerHTML = 'Log In Success!';
             logInButton.classList.add('home-login-button-in');
             logInButton.disabled = true;
-            
+
             // unlock the links
-            for (let i = 0; links < array.length; i++) {
+            for (let i = 0; i < links.length; i++) {
               links[i].style.pointerEvents = 'auto';
             };
 
