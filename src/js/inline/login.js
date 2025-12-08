@@ -7,9 +7,13 @@
       // check and see if device is logged
       let storedDevice = localStorage.getItem('storedDevice');
       let logInButton = document.querySelector('.home-login-button');
+      let links = document.querySelectorAll(".home-item");
 
       if (storedDevice) {
         // unlock the links
+        for (let i = 0; links < array.length; i++) {
+          links[i].style.pointerEvents = 'auto';
+        };
 
         // modify login button
         logInButton.disabled = true;
@@ -25,12 +29,12 @@
         passThemForward();
         async function passThemForward() {
           let creds = await getCreds();
-          logInProgression.dealWithLogIn(creds, logInButton);
+          logInProgression.dealWithLogIn(creds, logInButton, links);
         }
       };
     },
 
-    dealWithLogIn(creds, logInButton) {
+    dealWithLogIn(creds, logInButton, links) {
       let logInObject = {};
       let mainElement = document.querySelector('.home');  
       let formInputs = document.querySelectorAll('input');
@@ -68,6 +72,11 @@
             logInButton.innerHTML = 'Log In Success!';
             logInButton.classList.add('home-login-button-in');
             logInButton.disabled = true;
+            
+            // unlock the links
+            for (let i = 0; links < array.length; i++) {
+              links[i].style.pointerEvents = 'auto';
+            };
 
             loginDialog.close();          
           }; // end if

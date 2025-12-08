@@ -40,6 +40,7 @@
     border: 2px solid core.colorfunction(green, light15);
     color: core.colorfunction(white, base);
     text-decoration: none;
+    pointer-events: none;
     cursor: pointer;
     @extend %box-shadow;
     @extend %animate-helper;
