@@ -68,12 +68,12 @@
             logInButton.innerHTML = 'Log In Success!';
             logInButton.classList.add('home-login-button-in');
             logInButton.disabled = true;
-            
+
             loginDialog.close();          
           }; // end if
         }; // end closingDialog
        }); // end event listener
-    }
-  };
+    } // end dealing with
+  }; // end progression
 logInProgression.init();
 })();
