@@ -3,7 +3,7 @@
 
 %dialog {
   position: absolute;
-  width: 95VW;
+  // width: 95VW;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -21,12 +21,6 @@
       animation: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards show-backdrop;
     }
   }
-  // &:not([open]) {
-  //   @extend %animate-helper;
-  //   top: 124px;
-  //   // transform: translateY(-95%);
-  //   transform: translateX(120%);
-  // }
   &::backdrop {
     background: rgba(core.colorfunction(blue, base), 0.35);
     backdrop-filter: blur(0.2rem);
