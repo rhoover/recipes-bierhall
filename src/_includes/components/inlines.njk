@@ -38,13 +38,14 @@
   {#########################################}
   {# List Page Behavior #}
   {#########################################}
+    <!-- list search behavior -->
   {% if page.fileSlug == 'list' %}
-    {# {% set js %}
+    {% set js %}
       {% include "../../js/inline/list.js" %}
     {% endset %}
     <script>
       {{ js | jsmin | safe }}
-    </script> #}
+    </script>
 
     <!-- list search behavior -->
     {% set js %}
