@@ -46,7 +46,7 @@
 
         switch (whichButton) {
           case 'open':
-          loginDialog.showModal();            
+            loginDialog.showModal();            
           break;
           case 'close':
             closingDialog();
@@ -69,6 +69,7 @@
 
             localStorage.setItem('storedDevice', storable);
 
+            // update login button
             logInButton.innerHTML = 'Log In Success!';
             logInButton.classList.add('home-login-button-in');
             logInButton.disabled = true;
