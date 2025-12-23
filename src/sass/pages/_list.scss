@@ -46,18 +46,29 @@
   &-section {
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    border-bottom: 1px solid core.colorfunction(green, base);
+    // border-radius: 16px;
+  }
+  &-icon {
+    width: 40px;
+    height: 40px;
+    fill: core.colorfunction(green, base);
   }
   &-header {
     padding-left: 16px;
-    border-bottom: 1px solid core.colorfunction(green, base);
+    // border-bottom: 1px solid core.colorfunction(green, base);
     font-weight: 700;
   }
   &-card {
     display: grid;
     grid-template-columns: 70% 15% 15%;
     padding: 8px;
-    // border: 1px solid core.colorfunction(green, base);
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    &:first-of-type {
+      margin-top: 16px;
+    }
     border-radius: 8px;
     background-color: rgba(core.colorfunction(green, base), .15);
     &-text {
@@ -135,4 +146,83 @@ input[type="search" i]::-webkit-search-cancel-button {
     color: core.colorfunction(white, light35);
     font-weight: 700;
   }
+}
+
+// https://beyond-the-cascade.com/css-only-animated-accordion/
+details {
+  inline-size: 100%;
+
+  @media (prefers-reduced-motion: no-preference) {
+    &::details-content {
+      interpolate-size: allow-keywords;
+      transition-behavior: allow-discrete;
+      block-size: 0;
+      overflow-y: clip;
+      transition-property: content-visibility, block-size;
+      transition-duration: 0.2s;
+    }
+
+    &:open::details-content {
+      block-size: auto;
+    }
+  }
+}
+
+details[open] svg {
+  transform: rotate(180deg);
+}
+
+summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  // padding-inline: 1.5rem;
+  padding-block: 1.25rem;
+  list-style: none;
+  border-bottom: 1px solid core.colorfunction(green, base);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.home-search-results {
+    opacity: 0;
+    visibility: hidden;
+    @extend %box-shadow;
+    inline-size: calc(100% + 1px);
+    z-index: 999;
+    transition: opacity 0.5s, visibility 0.5s, transform 0.6s;
+    transform: scale(0.75) translateY(-16px);
+    border: 1px solid core.colorfunction(blue, base);
+    border-radius: 8px;
+    background: core.colorfunction(white, base);
+    overflow-y: scroll;
+    align-self: flex-start;
+    height: 0;
+    min-height: 0;
+    &-active {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+      min-height: auto;
+      max-height: 300px;
+    }
+    &-link {
+      display: block;
+      text-decoration: none;
+      color: core.colorfunction(black, base);
+      font-weight: 700;
+      text-align: left;
+      padding: 16px 8px 16px 8px;
+      border-bottom: 1px solid core.colorfunction(blue, base);
+      &:nth-child(even) {
+        background: core.colorfunction(white, light65);
+      }
+      & span {
+        margin-left: 48px;
+      }
+    }
 }

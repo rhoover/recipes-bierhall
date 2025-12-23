@@ -29,6 +29,7 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy(filesFromPath)
   );
   eleventyConfig.addPassthroughCopy('favicon.ico');
+  eleventyConfig.addPassthroughCopy('src/_data/recipes.json');
 
   ////////////////////////////////////////////////////
   // Plugins

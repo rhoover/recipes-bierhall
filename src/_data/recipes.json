@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Beet Salad",
+    "category": "salads",
+    "pageslug": "beetsalad",
+    "ingredients": [
+      {
+        "ingredient": "Red Beets",
+        "measurement": "lbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "25"
+      },
+      {
+        "ingredient": "White Vinegar",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "12"
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "onions",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "8"
+      },
+      {
+        "ingredient": "Canola Oil",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "6"
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "tablespoon",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Dice beets with big chopper",
+        "step": "1"
+      },
+      {
+        "procedure": "Fine dice onions and mix in beets",
+        "step": "2"
+      },
+      {
+        "procedure": "MAKE DRESSING SEPERATELY",
+        "step": "3"
+      },
+      {
+        "procedure": "Whisk sugar and s&p into vinegar until dissolved",
+        "step": "4"
+      },
+      {
+        "procedure": "Whisk canola oil into vinegar",
+        "step": "5"
+      },
+      {
+        "procedure": "Mix dressing into beet mixture",
+        "step": "6"
+      }
+    ]
+  },
+  {
+    "name": "Cucumber Salad",
+    "category": "salads",
+    "pageslug": "cucumbersalad",
+    "ingredients": [
+      {
+        "ingredient": "Cucumbers",
+        "measurement": "lbs",
+        "amountslow": "10",
+        "amountbusy": "20",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onions",
+        "measurement": "each",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "White Vinegar",
+        "measurement": "cup",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "tablespoon",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "teaspoon",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Peel Cucumbers",
+        "step": "1"
+      },
+      {
+        "procedure": "Slice with #5 slicer for big chopper",
+        "step": "2"
+      },
+      {
+        "procedure": "MAKE DRESSING SEPERATLY",
+        "step": "3"
+      },
+      {
+        "procedure": "Place remaining ingredients in a big enough container",
+        "step": "4"
+      },
+      {
+        "procedure": "Puree with stick blender",
+        "step": "5"
+      },
+      {
+        "procedure": "Mix dressing with cucumbers",
+        "step": "6"
+      }
+    ]
+  }
+]

@@ -75,3 +75,38 @@
     }
   }
 }
+
+.wake-screen-button {
+  display: none;
+  position: fixed;
+  left: 22%;
+  bottom: 0px;
+  width: 250px;
+  height: 50px;
+  background-color: rgba(core.colorfunction(green, base),0.55);
+  border-radius: 30% 30% 0% 0%;
+  border-top: 1px solid core.colorfunction(green, dark25);
+  border-right: 1px solid core.colorfunction(green, dark25);
+  border-left: 1px solid core.colorfunction(green, dark25);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  cursor: pointer;
+  &-active {
+    display: block;
+  }
+  & svg {
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 25%;
+    height: 55%;
+    fill: core.colorfunction(white, light25);
+  }
+  &-text {
+    color: core.colorfunction(white, base);
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    padding-right: 5px;
+    font-weight: 700;
+  }
+}

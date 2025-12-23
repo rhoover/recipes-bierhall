@@ -1,10 +1,11 @@
 [
+  {"value": "salads" , "text": "Salads"},
   {"value": "vegetables" , "text": "Vegetables"},
+  {"value": "dips" , "text": "Dips"},
   {"value": "dressings" , "text": "Dressings"},
   {"value": "marinades" , "text": "Marinades"},
-  {"value": "dips" , "text": "Dips"},
-  {"value": "misc" , "text": "Miscellaneous"},
   {"value": "soups" , "text": "Soups"},
   {"value": "sauces" , "text": "Sauces"},
-  {"value": "meats" , "text": "Meats"}
+  {"value": "meats" , "text": "Meats"},
+  {"value": "misc" , "text": "Miscellaneous"}
 ]

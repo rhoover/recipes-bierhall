@@ -38,20 +38,20 @@
   {#########################################}
   {# List Page Behavior #}
   {#########################################}
-    <!-- list search behavior -->
+
   {% if page.fileSlug == 'list' %}
-    {% set js %}
+    {# {% set js %}
       {% include "../../js/inline/list.js" %}
     {% endset %}
     <script>
       {{ js | jsmin | safe }}
-    </script>
+    </script> #}
 
     <!-- list search behavior -->
     {% set js %}
-      {% include "../../js/inline/search-list.js" %}
+      {% include "../../js/inline/search-list-new.js" %}
     {% endset %}
-    <script>
+    <script type="module">
       {{ js | jsmin | safe }}
     </script>
 
@@ -71,6 +71,13 @@
     <!-- recipe page behavior -->
     {% set js %}
       {% include "../../js/inline/recipe.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    <!-- screen wake behavior -->
+    {% set js %}
+      {% include "../../js/inline/wake-screen.js" %}
     {% endset %}
     <script>
       {{ js | jsmin | safe }}
