@@ -3,27 +3,12 @@
   <body class="fluid-text fluid-text--20">
     
     {% include "components/header.njk" %}
-    {# {% include "components/nav.njk" %} #}
 
     <main class="{{ page.fileSlug or 'home' }}" >
 
       {{ content | safe }}
 
     </main>
-    
-      {# {% if page.fileSlug == '' %} #}
-        {# {% include "components/share-button.njk" %} #}
-      {# {% endif %} #}
-
-      <!-- Normal Styles -->
-      {% if page.fileSlug == '' %}
-        <link rel="stylesheet" type="text/css" href="{{ "/css/style-home.css" | rev }}" media="tty" onload="this.media='screen'"/>
-      {% else %}
-      {# This is how to concatenate strings with Nunjucks, join stuff in an array #}
-        {% set cssName = ['/css/style-', page.fileSlug, '.css'] | join %}
-        {# each stylesheet has its own name #}
-        <link rel="stylesheet" type="text/css" href="{{ cssName | rev }}" media="tty" onload="this.media='screen'"/>
-      {% endif%}
 
       {% include "components/inlines.njk" %}
       
