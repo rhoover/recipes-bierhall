@@ -141,5 +141,89 @@
         "step": "6"
       }
     ]
+  },
+  {
+    "name": "Red Cabbage",
+    "category": "vegetables",
+    "pageslug": "redcabbage",
+    "ingredients": [
+      {
+        "ingredient": "Red Cabbage - Shredded",
+        "measurement": "case",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Canola Oil",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "quart",
+        "amountslow": "6",
+        "amountbusy": "12",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Red Wine",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - Red",
+        "measurement": "cup",
+        "amountslow": "1.5",
+        "amountbusy": "3",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "6",
+        "amountbusy": "12",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Cinnamon",
+        "measurement": "cup",
+        "amountslow": "1.5",
+        "amountbusy": "3",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Bay Leaves",
+        "measurement": "each",
+        "amountslow": "10",
+        "amountbusy": "20",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "cup",
+        "amountslow": "0.5",
+        "amountbusy": "1",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Wrap bay leaves tightly in cheese cloth",
+        "step": "1"
+      },
+      {
+        "procedure": "Place oil, water, vinegar, wine, cinnamon, and bay leaves in giant rondeau",
+        "step": "2"
+      },
+      {
+        "procedure": "Cook with lid on, stirring frequently",
+        "step": "3"
+      }
+    ]
   }
 ]

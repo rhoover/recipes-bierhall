@@ -48,7 +48,9 @@
       // have to listen on the whole document to pick up this custom event
       document.addEventListener('toggle-panels', (event) => {
         // self-explanatory
-        this.togglePanelClasses(event.detail);
+        document.startViewTransition(() => {
+          this.togglePanelClasses(event.detail);
+        });
       });
     }; // end connectedCallback()
 
