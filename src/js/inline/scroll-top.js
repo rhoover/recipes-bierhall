@@ -1,23 +1,25 @@
 (() => {
   'use strict';
 
-  let dressingsSection = document.querySelector('[data-category="dressings"]')
-  let scrollButton = document.querySelector('.scroller');
+  var contentElem = document.getElementsByTagName('main');
+  var contentElemPos = contentElem[0].offsetTop;
+  var scrollButton = document.querySelector('.scroller');
 
   window.addEventListener('scroll', buttonVisiblity);
   function buttonVisiblity() {
-    let scrollPos = window.scrollY;
-    // if (scrollPos >= 600) {
-    if (scrollPos >= dressingsSection.offsetTop) {
+    var scrollPos = window.scrollY;
+    if (scrollPos >= contentElemPos) {
       scrollButton.classList.add('scroller-visible');
-    } else {
+    };
+    if (scrollPos === contentElemPos) {
       scrollButton.classList.remove('scroller-visible');
-    };    
+      
+    };
   };
 
   scrollButton.addEventListener('click', scrollBehavior);
-  function scrollBehavior(event) {
-console.log(event.target);
+  function scrollBehavior() {
+
     var scrollMath = function (t, b, c, d) { //t = current time, b = start value, c = change in value, d = duration
       t /= d/2;
       if (t < 1) {

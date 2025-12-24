@@ -13,7 +13,7 @@ permalink: "/pages/list.html"
 <section>
   {% for category in categories %}
 
-    <details name="category-list">
+    <details name="category-list" data-category="{{ category.value }}">
 
       <summary class="list-header fluid-text fluid-text--50">
         {{ category.text}}
