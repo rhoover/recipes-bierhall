@@ -5,128 +5,35 @@
   font-display: swap;
 }
 
-// fluid typography setup
-// all explained here: https://simoncoudeville.be/blog/a-css-only-fluid-typography-approach/
-// demo: https://codepen.io/simoncoudeville/pen/QWxGvpR
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1500,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-  --root-font-size: 16;
-  --root-container-min-width: 320;
-  --root-container-max-width: 960;
-
-  /* Fluid type scales from https://utopia.fyi/ */
-
-  --root-fluid-min-ratio: 1.125;
-  --root-fluid-max-ratio: 1.333;
-  --root-fluid-min-font-size: var(--root-font-size);
-  --root-fluid-max-font-size: 18;
-
-  --root-fluid-min-font-size-0: calc(var(--root-fluid-min-font-size));
-  --root-fluid-min-font-size-1: calc(
-    var(--root-fluid-min-font-size-0) * var(--root-fluid-min-ratio)
-  );
-  --root-fluid-min-font-size-2: calc(
-    var(--root-fluid-min-font-size-1) * var(--root-fluid-min-ratio)
-  );
-  --root-fluid-min-font-size-3: calc(
-    var(--root-fluid-min-font-size-2) * var(--root-fluid-min-ratio)
-  );
-  --root-fluid-min-font-size-4: calc(
-    var(--root-fluid-min-font-size-3) * var(--root-fluid-min-ratio)
-  );
-  --root-fluid-min-font-size-5: calc(
-    var(--root-fluid-min-font-size-4) * var(--root-fluid-min-ratio)
-  );
-
-  --root-fluid-max-font-size-0: calc(var(--root-fluid-max-font-size));
-  --root-fluid-max-font-size-1: calc(
-    var(--root-fluid-max-font-size-0) * var(--root-fluid-max-ratio)
-  );
-  --root-fluid-max-font-size-2: calc(
-    var(--root-fluid-max-font-size-1) * var(--root-fluid-max-ratio)
-  );
-  --root-fluid-max-font-size-3: calc(
-    var(--root-fluid-max-font-size-2) * var(--root-fluid-max-ratio)
-  );
-  --root-fluid-max-font-size-4: calc(
-    var(--root-fluid-max-font-size-3) * var(--root-fluid-max-ratio)
-  );
-  --root-fluid-max-font-size-5: calc(
-    var(--root-fluid-max-font-size-4) * var(--root-fluid-max-ratio)
-  );
+  --step--p-sm-x: clamp(0.6944rem, 0.6611rem + 0.1481vw, 0.8rem);
+  --step--p-sm: clamp(0.8333rem, 0.7807rem + 0.2339vw, 1rem);
+  --step-p: clamp(1rem, 0.9211rem + 0.3509vw, 1.25rem);
+  --step-h5: clamp(1.2rem, 1.0855rem + 0.5088vw, 1.5625rem);
+  --step-h4: clamp(1.44rem, 1.278rem + 0.7202vw, 1.9531rem);
+  --step-h3: clamp(1.728rem, 1.5027rem + 1.0013vw, 2.4414rem);
+  --step-h2: clamp(2.0736rem, 1.7647rem + 1.3729vw, 3.0518rem);
+  --step-h1: clamp(2.4883rem, 2.0695rem + 1.8616vw, 3.8147rem);
 }
 
-// you have to use both this class and one of the others on an element
-.fluid-text {
-  /*
-        Fluid font-size math & functions from
-        https://www.smashingmagazine.com/2022/10/fluid-typography-clamp-sass-functions/
-        & https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/
-    */
 
-  --fluid-text-min-width: calc(
-    var(--this-min-width, var(--root-container-min-width)) /
-      var(--root-font-size)
-  );
-  --fluid-text-max-width: calc(
-    var(--this-max-width, var(--root-container-max-width)) /
-      var(--root-font-size)
-  );
-  --fluid-text-min-font-size: calc(
-    var(--this-min-font-size) / var(--root-font-size)
-  );
-  --fluid-text-max-font-size: calc(
-    var(--this-max-font-size) / var(--root-font-size)
-  );
-  --fluid-text-slope: calc(
-    calc(var(--fluid-text-max-font-size) - var(--fluid-text-min-font-size)) /
-      calc(var(--fluid-text-max-width) - var(--fluid-text-min-width))
-  );
-  --fluid-text-slope-unit: var(--this-slope-unit, 100cqi);
-  --fluid-text-intercept: calc(
-    var(--fluid-text-min-font-size) - var(--fluid-text-slope) *
-      var(--fluid-text-min-width)
-  );
-  --fluid-text-font-size: clamp(
-    var(--fluid-text-min-font-size) * 1rem,
-    var(--fluid-text-slope) * var(--fluid-text-slope-unit) + var(--fluid-text-intercept) * 1rem,
-    var(--fluid-text-max-font-size) * 1rem
-  );
-  font-size: var(--fluid-text-font-size);
+p, a, ul, ol, li, button, table {
+  font-size: var(--step-p);
 }
-
-.fluid-text--0 {
-  --this-min-font-size: var(--root-fluid-min-font-size-0);
-  --this-max-font-size: var(--root-fluid-max-font-size-0);
-  --this-max-width: var(--container-max-width);
+h1 {
+  font-size: var(--step-h1);
 }
-
-.fluid-text--10 {
-  --this-min-font-size: var(--root-fluid-min-font-size-1);
-  --this-max-font-size: var(--root-fluid-max-font-size-1);
-  --this-max-width: var(--container-max-width);
+h2 {
+  font-size: var(--step-h2);
 }
-
-.fluid-text--20 {
-  --this-min-font-size: var(--root-fluid-min-font-size-2);
-  --this-max-font-size: var(--root-fluid-max-font-size-2);
-  --this-max-width: var(--container-max-width);
+h3 {
+  font-size: var(--step-h3);
 }
-
-.fluid-text--30 {
-  --this-min-font-size: var(--root-fluid-min-font-size-3);
-  --this-max-font-size: var(--root-fluid-max-font-size-3);
-  --this-max-width: var(--container-max-width);
+h4 {
+  font-size: var(--step-h4);
 }
-
-.fluid-text--40 {
-  --this-min-font-size: var(--root-fluid-min-font-size-4);
-  --this-max-font-size: var(--root-fluid-max-font-size-4);
-  --this-max-width: var(--container-max-width);
-}
-
-.fluid-text--50 {
-  --this-min-font-size: var(--root-fluid-min-font-size-5);
-  --this-max-font-size: var(--root-fluid-max-font-size-5);
-  --this-max-width: var(--container-max-width);
+h5 {
+  font-size: var(--step-h5);
 }

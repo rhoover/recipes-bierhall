@@ -50,6 +50,7 @@ header {
     align-self: center;
     text-decoration: none;
     color: core.colorfunction(green, base);
+    font-size: var(--step-h3);
     &:hover {
       color: core.colorfunction(green, dark25);
       text-shadow: 0px 0px 7px core.colorfunction(green, light25);

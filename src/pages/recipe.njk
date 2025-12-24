@@ -12,19 +12,19 @@ eleventyComputed:
   title: "{{ recipe.name }}"
 ---
 
-<h1 class="recipe-header fluid-text fluid-text--50">{{ recipe.name }}</h1>
+<h1 class="recipe-header">{{ recipe.name }}</h1>
 
 <buttons-row class="recipe-buttons">
-  <button class="recipe-button recipe-button-active fluid-text fluid-text--20" data-source="ing">Ingredients</button>
-  <button class="recipe-button fluid-text fluid-text--20" data-source="proc">Procedures</button>
-  <button class="recipe-button fluid-text fluid-text--20" data-source="no">Notes</button>
+  <button class="recipe-button recipe-button-active" data-source="ing">Ingredients</button>
+  <button class="recipe-button" data-source="proc">Procedures</button>
+  <button class="recipe-button" data-source="no">Notes</button>
 </buttons-row>
 
 <panels-row class="recipe-panels">
   <section class="recipe-panel recipe-panel-active" data-target="ing">
     <table class="recipe-table">
       <tbody>
-        <tr class="recipe-table-header fluid-text fluid-text--0">
+        <tr class="recipe-table-header">
           <th></th>
           <th>Slow</th>
           <th>Busy</th>
@@ -33,7 +33,7 @@ eleventyComputed:
         </tr>
         <tr style="height: 16px;"></tr>
         {% for ingredient in recipe.ingredients %}
-          <tr class="recipe-table-row fluid-text fluid-text--10">
+          <tr class="recipe-table-row">
             <td class="recipe-table-row-ingredient">{{ ingredient.ingredient }}</td>
             <td>{{ ingredient.amountslow }}</td>
             <td>{{ ingredient.amountbusy }}</td>
@@ -61,5 +61,5 @@ eleventyComputed:
 
 <div class="wake-screen-button" data-status="off">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,2H2A1,1,0,0,0,1,3V17a1,1,0,0,0,1,1h9v2H8a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2H13V18h9a1,1,0,0,0,1-1V3A1,1,0,0,0,22,2ZM21,16H3V4H21Z"/></svg>
-	<p class="wake-screen-button-text fluid-text fluid-text--10">Keep Screen Awake</p>
+	<p class="wake-screen-button-text">Keep Screen Awake</p>
 </div>

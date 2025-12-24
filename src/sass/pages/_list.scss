@@ -56,6 +56,7 @@
   &-header {
     padding-left: 16px;
     font-weight: 700;
+    font-size: var(--step-h3);
   }
   &-card {
     display: flex;
@@ -72,6 +73,7 @@
     background-color: rgba(core.colorfunction(green, base), .15);
     &-text {
       align-self: center;
+      font-size: var(--step-h4);
     }
     &-link {
       text-align: center;

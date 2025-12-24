@@ -13,6 +13,7 @@
     &-button {
       @extend %recipe-buttons;
       padding: 0px;
+      font-size: var(--step-h3);
       &-in {
         opacity: .25;
       }
@@ -59,6 +60,7 @@
       align-self: center;
       text-align: center;
       background-color: rgba(core.colorfunction(green, base), 0.7);
+      font-size: var(--step-h1);
     }
   }
 }
