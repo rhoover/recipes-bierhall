@@ -22,7 +22,7 @@
           composed: true
         }));
 
-        // send it off for processing button classes
+        // send it below for processing button classes
         this.toggleButtonClasses(sourceButtonClicked);
       }); // end eventListener
     }; // end connectedCallback()
