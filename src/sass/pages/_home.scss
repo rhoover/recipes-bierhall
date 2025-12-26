@@ -19,9 +19,33 @@
       }
     }
     &-dialog {
-      @extend %dialog;
+      // @extend %dialog;
       &-close {
         @extend %recipe-buttons;
+      }
+      opacity: 1;
+      scale: 1;
+      transition: 
+        opacity 0.2s ease-out,
+        scale 0.2s ease-out,
+        overlay 0.2s ease-out allow-discrete,
+        display 0.2s ease-out allow-discrete;
+      height: 470px;
+      width: 85%;
+      border: 1px solid blue;
+      border-radius: 10.4px;
+
+      &:not([open]) {
+        opacity: 0;
+        scale: 0.90;
+        &::backdrop {
+          background-color: rgba(0, 0, 255, 0);
+        }
+      }
+
+      @starting-style {
+        opacity: 0;
+        scale: 0.90;
       }
     }
   }
@@ -68,7 +92,9 @@
 #login {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 16px;
+  font-size: 1.65rem;
 }
 
 input {
@@ -78,6 +104,7 @@ input {
   border: 1px solid core.colorfunction(black, light25);
   padding-left: 8px;
   transition: box-shadow 0.25s;
+  font-size: inherit;
   &:focus {
     box-shadow: 0 0 15px rgba(core.colorfunction(black, base),0.5)
   }
