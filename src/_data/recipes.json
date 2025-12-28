@@ -225,5 +225,150 @@
         "step": "3"
       }
     ]
+  },
+  {
+    "name": "Mashed Potatoes",
+    "category": "misc",
+    "pageslug": "mashedpotatoes",
+    "ingredients": [
+      {
+        "ingredient": "Potatoes - Yukon",
+        "measurement": "each",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "enough"
+      },
+      {
+        "ingredient": "Caraway Seed",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Sauerkraut - Plain",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      },
+      {
+        "ingredient": "Heavy Cream",
+        "measurement": "quart",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Sour Cream",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Butter",
+        "measurement": "lbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      },
+      {
+        "ingredient": "Salt",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Add salt and rough chopped potatoes to big pot, and water to cover",
+        "step": "1"
+      },
+      {
+        "procedure": "Boil approx. 1 - 1.5 hours",
+        "step": "2"
+      },
+      {
+        "procedure": "In a separate sauce pot place caraway, butter, heavy cream, sour cream, sauerkraut and bring to a boil",
+        "step": "3"
+      },
+      {
+        "procedure": "In floor mixer, add liquid to drained potatoes",
+        "step": "4"
+      }
+    ]
+  },
+  {
+    "name": "Sauerkraut",
+    "category": "vegetables",
+    "pageslug": "sauerkraut",
+    "ingredients": [
+      {
+        "ingredient": "Sauerkraut",
+        "measurement": "each",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Bacon",
+        "measurement": "lbs",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onions",
+        "measurement": "cup",
+        "amountslow": "8",
+        "amountbusy": "16",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Apples - Granny Smith",
+        "measurement": "each",
+        "amountslow": "20",
+        "amountbusy": "40",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Caraway Seed",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "tablespoon",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Rough chop bacon and onions",
+        "step": "1"
+      },
+      {
+        "procedure": "Core apples and dice with robot chopper",
+        "step": "2"
+      },
+      {
+        "procedure": "Cook bacon, add onions and caraway seeds",
+        "step": "3"
+      },
+      {
+        "procedure": "Add diced apples to sauerkraut",
+        "step": "4"
+      },
+      {
+        "procedure": "Add bacon-onion mixture to sauerkraut",
+        "step": "5"
+      }
+    ]
   }
 ]
