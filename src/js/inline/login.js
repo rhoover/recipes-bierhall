@@ -59,7 +59,7 @@
         };
 
         function closingDialog() {
-          event.preventDefault();
+
           logInObject.email = formInputs[0].value;
           logInObject.pw = formInputs[1].value;
 
@@ -68,17 +68,21 @@
             let storable = JSON.stringify(deviceLogged);
 
             localStorage.setItem('storedDevice', storable);
+            
+            // unlock the links
+            for (let i = 0; i < links.length; i++) {
+              links[i].style.pointerEvents = 'auto';
+            };
 
             // update login button
             logInButton.innerHTML = 'Log In Success!';
             logInButton.classList.add('home-login-button-in');
             logInButton.disabled = true;
 
-            // unlock the links
-            for (let i = 0; i < links.length; i++) {
-              links[i].style.pointerEvents = 'auto';
-            };
 
+            let loginForm = document.querySelector('#login');
+
+            loginForm.reset();
             loginDialog.close();          
           }; // end if
         }; // end closingDialog
