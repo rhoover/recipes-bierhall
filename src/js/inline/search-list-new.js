@@ -61,7 +61,7 @@ import myData from '/_data/recipes.json' with {type: 'json'};
 
   function displayResults(results) {
     let link = document.createElement('a');
-    link.setAttribute('href', `/recipes/${results.pageslug}/`);
+    link.setAttribute('href', `/recipes/${results.pageslug}.html`);
     link.className = `home-search-results-link`;
     link.innerHTML = `${results.name}  <span>➤</span>`;
     resultsList.appendChild(link);
