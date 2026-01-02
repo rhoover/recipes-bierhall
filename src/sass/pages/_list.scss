@@ -19,6 +19,7 @@
     }
     &-input {
       line-height: 3.5rem;
+      font-size: var(--step-h3);
       width: 100%;
       padding-left: 16px;
       background: transparent;
@@ -212,6 +213,7 @@ summary {
       display: block;
       text-decoration: none;
       color: core.colorfunction(black, base);
+      font-size: var(--step-h3);
       font-weight: 700;
       text-align: left;
       padding: 16px 8px 16px 8px;
