@@ -18,6 +18,7 @@
     border-bottom: 1px solid rgba(core.colorfunction(green, base), 0.95);
   }
   &-button {
+    width: 40%;
     padding: 0px 8px;
     line-height: 4rem;
     text-align: center;
@@ -33,16 +34,19 @@
   }
   &-panel {
     display: none;
-  &-active {
-    display: block;
-    margin-bottom: 124px;
-  }
+    &-active {
+      display: block;
+      margin-bottom: 124px;
+    }
+    &-ingredients {
+      display: block;
+    }
   }
   &-table {
     width: 100%;
     text-align: center;
     margin-top: 8px;
-  &-row {
+    &-row {
       line-height: 3rem;
       border-bottom: 1px solid rgba(core.colorfunction(green, base), 0.95);
       &-ingredient {
@@ -54,6 +58,7 @@
   }
   &-procedure {
     list-style-position: inside;
+    font-size: var(--step-h5);
     margin-bottom: 16px;
     padding: 16px;
     border: 1px solid core.colorfunction(green, light25);
@@ -71,6 +76,7 @@
     padding: 16px;
     border: 1px solid core.colorfunction(green, light25);
     border-radius: 8px;
+    font-size: var(--step-h5);
     &-list {
       margin-top: 16px;
     }
@@ -105,6 +111,54 @@
   &-text {
     grid-column: 2 / 3;
     padding-left: 16px;
+    font-weight: 700;
+  }
+  &[data-status="on"] {
+    &>svg {
+      fill: core.colorfunction(white, base);
+    }
+  }
+}
+
+.scroller {
+  // display: none;
+  opacity: 0;
+  position: fixed;
+  right: 0px;
+  bottom: 32px;
+  width: 65px;
+  height: 65px;
+  border-radius: 30% 0% 0% 30%;
+  background-color: rgba(core.colorfunction(green, base), 0.55);
+  border-left: 1px solid core.colorfunction(green, dark25);
+  border-top: 1px solid core.colorfunction(green, dark25);
+  border-bottom: 1px solid core.colorfunction(green, dark25);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  z-index: 350;
+  @extend %animate-helper;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 14px;
+    left: 17px;
+    transform: rotate(45deg);
+    background: transparent;
+    border-top: .3em solid core.colorfunction(white, light35);
+    border-left: .3em solid core.colorfunction(white, light35);
+  }
+  &-visible {
+    // display: block;
+    opacity: 1;
+  }
+  & p {
+    position: absolute;
+    top: 30px;
+    left: 13px;
+    color: core.colorfunction(white, light35);
     font-weight: 700;
   }
 }

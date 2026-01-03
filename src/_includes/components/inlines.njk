@@ -82,4 +82,11 @@
     <script>
       {{ js | jsmin | safe }}
     </script>
+    <!-- scroll button behavior -->
+    {% set js %}
+      {% include "../../js/inline/scroll-top.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
   {% endif %}

@@ -34,9 +34,9 @@
           changeUI();
 
           // listen for our release event
-          wakeLock.onrelease = function(ev) {
-            console.log(ev);
-          };
+          // wakeLock.onrelease = function(ev) {
+          //   console.log(ev);
+          // };
 
           wakeLock.addEventListener('release', () => {
             // if wake lock is released alter the button accordingly
