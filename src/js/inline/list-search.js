@@ -13,7 +13,6 @@
     listObject['slug'] = card.dataset.slug;
     listArray.push(listObject);
   });
-  console.log(listArray);
 
   document.addEventListener('DOMContentLoaded', (event) => {
     searchInput.value = '';
