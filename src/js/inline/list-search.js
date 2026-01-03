@@ -37,12 +37,12 @@
           searchQuery = searchInput.value.toLowerCase();
           resultsList.innerHTML = '';
 
-          // get object from array that matches search values
+          // get object from array of recipes on page that matches search values
           for (let i = 0; i < listArray.length; i++) {
             let obj = listArray[i];
 
             // send the results to the displayResults function to display them
-            if (obj.name.toLowerCase().includes(searchQuery)) {
+            if (obj.name.toLowerCase().includes(searchQuery) || obj.slug.includes(searchQuery.toLowerCase())) {
               displayResults(obj);
             };
           };

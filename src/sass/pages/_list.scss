@@ -168,11 +168,15 @@ details {
     opacity: 1;
     block-size: auto;
   }
+
+  & .list-header-svg {
+    transition: transform 0.5s ease-out;
+  }
 }
 
 details[open]{
   & .list-header-svg {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
