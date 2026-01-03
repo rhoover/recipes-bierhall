@@ -15,6 +15,7 @@
     listArray.push(listObject);
   });
 
+  // make sure it's clean on entry
   document.addEventListener('DOMContentLoaded', (event) => {
     searchInput.value = '';
   });
