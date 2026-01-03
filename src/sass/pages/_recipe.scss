@@ -92,21 +92,19 @@
   box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
   cursor: pointer;
   &-active {
-    display: block;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
   }
   & svg {
-    display: block;
-    position: absolute;
-    top: 15px;
-    width: 25%;
+    grid-column: 1 / 2;
+    justify-self: end;
     height: 55%;
-    fill: core.colorfunction(white, light25);
+    fill: inherit;
   }
   &-text {
-    position: absolute;
-    top: 12px;
-    right: 20px;
-    padding-right: 5px;
+    grid-column: 2 / 3;
+    padding-left: 16px;
     font-weight: 700;
   }
 }
