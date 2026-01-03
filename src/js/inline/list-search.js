@@ -7,17 +7,18 @@
   let searchQuery;
   let listArray = [];
 
+  // make sure it's clean on entry
+  document.addEventListener('DOMContentLoaded', (event) => {
+    searchInput.value = '';
+    resultsList.replaceChildren();
+  });
+
   // build array of recipes on page to search through
   pageSearch.forEach((card) => {
     let listObject = {};
     listObject['name'] = card.firstElementChild.innerHTML;
     listObject['slug'] = card.dataset.slug;
     listArray.push(listObject);
-  });
-
-  // make sure it's clean on entry
-  document.addEventListener('DOMContentLoaded', (event) => {
-    searchInput.value = '';
   });
 
   function decideAndSearch() {
