@@ -7,6 +7,7 @@
   let searchQuery;
   let listArray = [];
 
+  // build array of recipes on page to search through
   pageSearch.forEach((card) => {
     let listObject = {};
     listObject['name'] = card.firstElementChild.innerHTML;
@@ -34,6 +35,7 @@
           searchQuery = searchInput.value.toLowerCase();
           resultsList.innerHTML = '';
 
+          // get object from array that matches search values
           for (let i = 0; i < listArray.length; i++) {
             let obj = listArray[i];
 
@@ -59,11 +61,14 @@
   decideAndSearch();
 
   function displayResults(results) {
+    // build result link
     let link = document.createElement('a');
     link.setAttribute('href', `/recipes/${results.slug}.html`);
     link.className = `home-search-results-link`;
     link.innerHTML = `${results.name}  <span>➤</span>`;
+    // add link to results to see
     resultsList.appendChild(link);
+    // clear search box on the way out
     link.addEventListener('click', (event) => {
       searchInput.value = '';
     });
