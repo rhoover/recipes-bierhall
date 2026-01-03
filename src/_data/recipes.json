@@ -283,7 +283,7 @@
     ],
     "procedures": [
       {
-        "procedure": "Add salt and rough chopped potatoes to big pot, and water to cover",
+        "procedure": "Add salt and rough chopped potatoes to big pot, and water to cover, and by enough potatoes, it is meant enough to fill the pot",
         "step": "1"
       },
       {
@@ -368,6 +368,146 @@
       {
         "procedure": "Add bacon-onion mixture to sauerkraut",
         "step": "5"
+      }
+    ]
+  },
+  {
+    "name": "Roasted Vegetables",
+    "category": "vegetables",
+    "pageslug": "roastedvegetables",
+    "ingredients": [
+      {
+        "ingredient": "Gold Beets",
+        "measurement": "bag",
+        "amountslow": "0.5",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Parsnip",
+        "measurement": "bag",
+        "amountslow": "0.5",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onion - Yellow",
+        "measurement": "lbs",
+        "amountslow": "12",
+        "amountbusy": "25",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Carrot",
+        "measurement": "lbs",
+        "amountslow": "12",
+        "amountbusy": "25",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Celery Root",
+        "measurement": "case",
+        "amountslow": "0.5",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Celery",
+        "measurement": "case",
+        "amountslow": "0.25",
+        "amountbusy": "0.5",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "STOP. Go find if there are bags of pre-diced root vegetables in the walk-in",
+        "step": "1"
+      },
+      {
+        "procedure": "If yes, toss with oil, S&P blend, and roast for 25-30 minutes",
+        "step": "2"
+      },
+      {
+        "procedure": "If no, top beets and dice. Toss with oil, S&P blend, and in covered hotel pan roast for 45 minutes",
+        "step": "3"
+      },
+      {
+        "procedure": "Prep and dice all other vegetables, toss in oil and S&P blend, and roast for 20-25 minutes",
+        "step": "4"
+      },
+      {
+        "procedure": "Allow all vegetables to cool, then mix and store",
+        "step": "5"
+      }
+    ]
+  },
+  {
+    "name": "Cole Slaw",
+    "category": "vegetables",
+    "pageslug": "coleslaw",
+    "ingredients": [
+      {
+        "ingredient": "Green Cabbage - Shredded",
+        "measurement": "bag",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Salt",
+        "measurement": "cup",
+        "amountslow": "1/3",
+        "amountbusy": "2/3",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Mayonnaise",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - Apple",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Celery Seed",
+        "measurement": "tablespoon",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Mix cabbage thoroughly with sugar and salt, and place in a perforated, and let sit at room temperature for an hour",
+        "step": "1"
+      },
+      {
+        "procedure": "Remove cabbage from pan, squeezing out excess liquid",
+        "step": "2"
+      },
+      {
+        "procedure": "Mix into cabbage the mayonnaise, vinegar and celery seed",
+        "step": "3"
+      }
+    ],
+    "notes": [
+      {
+        "note": "Note to sugar to salt ratio is 3 - 1",
+        "id": "1"
       }
     ]
   }
