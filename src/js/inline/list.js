@@ -7,12 +7,6 @@
   let searchQuery;
   let listArray = [];
 
-  // make sure it's clean on entry
-  document.addEventListener('DOMContentLoaded', (event) => {
-    searchInput.value = '';
-    resultsList.replaceChildren();
-  });
-
   // build array of recipes on page to search through
   pageSearch.forEach((card) => {
     let listObject = {};
@@ -42,7 +36,7 @@
             let obj = listArray[i];
 
             // send the results to the displayResults function to display them
-            if (obj.name.toLowerCase().includes(searchQuery) || obj.slug.includes(searchQuery.toLowerCase())) {
+            if (obj.name.toLowerCase().includes(searchQuery) || obj.slug.includes(searchQuery)) {
               displayResults(obj);
             };
           };
@@ -70,9 +64,15 @@
     link.innerHTML = `${results.name}  <span>➤</span>`;
     // add link to results to see
     resultsList.appendChild(link);
-    // clear search box on the way out
+    // clear search box and results box on the way out
     link.addEventListener('click', (event) => {
+      event.preventDefault();
       searchInput.value = '';
+      resultsList.innerHTML = '';
+      resultsList.classList.remove('home-search-results-active');
+      setTimeout(() => {
+        window.location.href = `/recipes/${results.slug}.html`;
+      }, 0.25);
     });
   }; // end displayResults
 

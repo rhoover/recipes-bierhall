@@ -510,5 +510,109 @@
         "id": "1"
       }
     ]
+  },
+  {
+    "name": "Potato Salad",
+    "category": "salads",
+    "pageslug": "potatosalad",
+    "ingredients": [
+      {
+        "ingredient": "Potatoes - Red",
+        "measurement": "each",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "enough"
+      },
+      {
+        "ingredient": "Onions - Red",
+        "measurement": "each",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "10"
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "8"
+      },
+      {
+        "ingredient": "Mustard - Whole Grain",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Cornichons",
+        "measurement": "can",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Capers",
+        "measurement": "jar",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Dill",
+        "measurement": "bu",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Lime Juice",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Canola Oil",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Place salt, diced potatoes and water to cover in stock pot",
+        "step": "1"
+      },
+      {
+        "procedure": "Drain and spread between two tubs so as not to overcook",
+        "step": "2"
+      },
+      {
+        "procedure": "MAKE DRESSING SEPARATELY:",
+        "step": "3"
+      },
+      {
+        "procedure": "Fine dice onions and saute until barely translucent",
+        "step": "4"
+      },
+      {
+        "procedure": "Put vinegar, lime juice and mustard in big cambro, then drizzle in canola oil to make dressing",
+        "step": "5"
+      },
+      {
+        "procedure": "Grind cornichons, drain capers, chop dill",
+        "step": "6"
+      },
+      {
+        "procedure": "Stir onions, cornichons, capers and dill into dressing",
+        "step": "7"
+      },
+      {
+        "procedure": "Pour dressing over still warm potatoes",
+        "step": "8"
+      }
+    ]
   }
 ]
