@@ -43,6 +43,7 @@
     }
   }
   &-table {
+    table-layout: fixed;
     width: 100%;
     text-align: center;
     margin-top: 8px;
@@ -53,6 +54,12 @@
         text-align: left;
         font-weight: 700;
         border-right: 1px solid core.colorfunction(green, base);
+      }
+      &-standard {
+        border-right: 1px solid core.colorfunction(green, base);
+      }
+      & td {
+        text-overflow: ellipsis;
       }
     }
   }

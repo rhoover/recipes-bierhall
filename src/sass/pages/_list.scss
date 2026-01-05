@@ -10,7 +10,6 @@
   padding: 124px 0px 124px 0px;
   &-search {
     position: relative;
-    background-color: core.colorfunction(blue, light85);
     &-label {
       position: absolute;
       width: max-content;
@@ -22,7 +21,7 @@
       font-size: var(--step-h3);
       width: 100%;
       padding-left: 16px;
-      background: transparent;
+      background-color: core.colorfunction(blue, light85);
       border-radius: 16px;
       border: 1px solid core.colorfunction(blue, base);
       color: inherit;
@@ -186,7 +185,7 @@ summary {
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
-  padding-block: 1.25rem;
+  padding-block: 16px;
   list-style: none;
   border-bottom: 1px solid core.colorfunction(green, base);
 }

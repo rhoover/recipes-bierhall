@@ -41,7 +41,7 @@
       },
       {
         "ingredient": "S&P Blend",
-        "measurement": "tablespoon",
+        "measurement": "Tbs",
         "amountslow": "",
         "amountbusy": "",
         "amountstandard": "4"
@@ -102,14 +102,14 @@
       },
       {
         "ingredient": "Sugar",
-        "measurement": "tablespoon",
+        "measurement": "Tbs",
         "amountslow": "5",
         "amountbusy": "10",
         "amountstandard": ""
       },
       {
         "ingredient": "S&P Blend",
-        "measurement": "teaspoon",
+        "measurement": "tsp",
         "amountslow": "5",
         "amountbusy": "10",
         "amountstandard": ""
@@ -228,7 +228,7 @@
   },
   {
     "name": "Mashed Potatoes",
-    "category": "misc",
+    "category": "vegetables",
     "pageslug": "mashedpotatoes",
     "ingredients": [
       {
@@ -342,7 +342,7 @@
       },
       {
         "ingredient": "S&P Blend",
-        "measurement": "tablespoon",
+        "measurement": "Tbs",
         "amountslow": "4",
         "amountbusy": "8",
         "amountstandard": ""
@@ -484,7 +484,7 @@
       },
       {
         "ingredient": "Celery Seed",
-        "measurement": "tablespoon",
+        "measurement": "Tbs",
         "amountslow": "4",
         "amountbusy": "8",
         "amountstandard": ""
@@ -612,6 +612,1160 @@
       {
         "procedure": "Pour dressing over still warm potatoes",
         "step": "8"
+      }
+    ]
+  },
+  {
+    "name": "Turnip Slaw",
+    "category": "salads",
+    "pageslug": "turnipslaw",
+    "ingredients": [
+      {
+        "ingredient": "Turnips",
+        "measurement": "lbs",
+        "amountslow": "10",
+        "amountbusy": "20",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Red Bell Peppers",
+        "measurement": "each",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Scallions",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Mayonnaise",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "Tbs",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "tsp",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Push peeled turnips through fine shredder on robot coupe",
+        "step": "1"
+      },
+      {
+        "procedure": "Fine dice peppers and scallions",
+        "step": "2"
+      },
+      {
+        "procedure": "Add everything to shredded turnips, mix thoroughly",
+        "step": "3"
+      }
+    ]
+  },
+  {
+    "name": "Tomato Salad",
+    "category": "salads",
+    "pageslug": "tomatosalad",
+    "ingredients": [
+      {
+        "ingredient": "Tomatoes - Roma",
+        "measurement": "case",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Garlic - Whole Cloves",
+        "measurement": "oz",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onion - White",
+        "measurement": "each",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onion - Red",
+        "measurement": "each",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Fennel",
+        "measurement": "each",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Oregano - Fresh",
+        "measurement": "Tbs",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Parsley",
+        "measurement": "bu",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Cumin",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Allspice",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - Red",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "3",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Lime Juice",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Canola Oil",
+        "measurement": "cup",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Cut tops off tomatoes, core fennel, cut onions in half",
+        "step": "1"
+      },
+      {
+        "procedure": "Run veg through fine slicer on robot coupe",
+        "step": "2"
+      },
+      {
+        "procedure": "Toss with oil and S&P, roast in oven for 20 minutes",
+        "step": "3"
+      },
+      {
+        "procedure": "Remove and cool",
+        "step": "4"
+      },
+      {
+        "procedure": "Dice tomatoes with robot chopper",
+        "step": "5"
+      },
+      {
+        "procedure": "Fine chop oregano and parsley",
+        "step": "6"
+      },
+      {
+        "procedure": "Brown garlic in saute pan, adding cumin and allspice",
+        "step": "7"
+      },
+      {
+        "procedure": "Combine vinegar and lime juice, add roasted garlic, drizzle in canola oil with immersion blender to make dressing",
+        "step": "8"
+      },
+      {
+        "procedure": "Mix all ingredients into tomatoes",
+        "step": "9"
+      }
+    ]
+  },
+  {
+    "name": "Carrot Salad",
+    "category": "salads",
+    "pageslug": "carrotsalad",
+    "ingredients": [
+      {
+        "ingredient": "Carrots",
+        "measurement": "lbs",
+        "amountslow": "10",
+        "amountbusy": "20",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Dill - Fresh",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Orange Juice",
+        "measurement": "cup",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Honey",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "cup",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Canola Oil",
+        "measurement": "cup",
+        "amountslow": "2-1/2",
+        "amountbusy": "5",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "Tbs",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Peel carrots",
+        "step": "1"
+      },
+      {
+        "procedure": "Approximately one-third of carrots, cut in half length-wise, and slice with robot coupe",
+        "step": "2"
+      },
+      {
+        "procedure": "Fine shred remaining carrots",
+        "step": "3"
+      },
+      {
+        "procedure": "Place half-moon carrots in pot with salt and water to cover, simmer ~10 minutes, drain and cool",
+        "step": "4"
+      },
+      {
+        "procedure": "Fine chop dill",
+        "step": "5"
+      },
+      {
+        "procedure": "MAKE DRESSING SEPARATELY:",
+        "step": "6"
+      },
+      {
+        "procedure": "Pour orange juice, honey and vinegar in container, drizzle in canola oil with immersion blender",
+        "step": "7"
+      },
+      {
+        "procedure": "Mix carrots, S&P blend, dill and dressing",
+        "step": "8"
+      }
+    ]
+  },
+  {
+    "name": "S&P Blend",
+    "category": "misc",
+    "pageslug": "spblend",
+    "ingredients": [
+      {
+        "ingredient": "Salt - Kosher",
+        "measurement": "box",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Black Pepper - Coarse",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Mix salt and pepper",
+        "step": "1"
+      }
+    ],
+    "notes": [
+      {
+        "note": "If using fine ground pepper, cut the amount in half",
+        "id": "1"
+      }
+    ]
+  },
+  {
+    "name": "Pickle Chips",
+    "category": "vegetables",
+    "pageslug": "picklechips",
+    "ingredients": [
+      {
+        "ingredient": "Cucumbers",
+        "measurement": "case",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "gallon",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1-1/2"
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "gallon",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2-1/2"
+      },
+      {
+        "ingredient": "Salt",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Garlic - Whole Cloves",
+        "measurement": "oz",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      },
+      {
+        "ingredient": "Dill",
+        "measurement": "bu",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Fine slice cucumbers with robot coupe",
+        "step": "1"
+      },
+      {
+        "procedure": "Put all other ingredients in a pot and bring to a boil",
+        "step": "2"
+      },
+      {
+        "procedure": "Pour hot liquid over cucumber slices",
+        "step": "3"
+      }
+    ]
+  },
+  {
+    "name": "Pickled Veg",
+    "category": "vegetables",
+    "pageslug": "pickledveg",
+    "ingredients": [
+      {
+        "ingredient": "Fennel",
+        "measurement": "lbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3"
+      },
+      {
+        "ingredient": "Onion - White",
+        "measurement": "lbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3"
+      },
+      {
+        "ingredient": "Red Bell Peppers",
+        "measurement": "lbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "gallon",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3/4"
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "gallon",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1-1/4"
+      },
+      {
+        "ingredient": "Salt",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1/2"
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Ginger Powder",
+        "measurement": "Tbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Prep vegetables to be fine sliced with robot coupe",
+        "step": "1"
+      },
+      {
+        "procedure": "Bring remaining ingredients to a boil",
+        "step": "2"
+      },
+      {
+        "procedure": "Pour over sliced vegetables",
+        "step": "3"
+      }
+    ]
+  },
+  {
+    "name": "Pickled Eggs",
+    "category": "misc",
+    "pageslug": "pickledeggs",
+    "ingredients": [
+      {
+        "ingredient": "Eggs - Hard Boiled",
+        "measurement": "each",
+        "amountslow": "24",
+        "amountbusy": "48",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onions",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Beet Salad",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "cup",
+        "amountslow": "3",
+        "amountbusy": "6",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Salt",
+        "measurement": "Tbs",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "Tbs",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Cloves",
+        "measurement": "Tbs",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Place all ingredients in container and mix thoroughly",
+        "step": "1"
+      }
+    ]
+  },
+  {
+    "name": "Fritter Batter",
+    "category": "vegetables",
+    "pageslug": "fritterbatter",
+    "ingredients": [
+      {
+        "ingredient": "Zucchinis",
+        "measurement": "lbs",
+        "amountslow": "8",
+        "amountbusy": "16",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Salt",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Scallions",
+        "measurement": "bu",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Parsley",
+        "measurement": "bu",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Garlic - Chopped",
+        "measurement": "Tbs",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Feta Cheese",
+        "measurement": "cup",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Lemon Juice",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Flour",
+        "measurement": "cup",
+        "amountslow": "6",
+        "amountbusy": "12",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Liquid Egg",
+        "measurement": "quart",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "Tbs",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Baking Powder",
+        "measurement": "Tbs",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Shred zucchini with coarse grind of robot coupe",
+        "step": "1"
+      },
+      {
+        "procedure": "Toss with salt and sugar",
+        "step": "2"
+      },
+      {
+        "procedure": "Place in perforated hotel pan, with weight on top, overnight in walk-in",
+        "step": "3"
+      },
+      {
+        "procedure": "NEXT DAY:",
+        "step": "4"
+      },
+      {
+        "procedure": "Chop scallions and parsley, crumble feta cheese",
+        "step": "5"
+      },
+      {
+        "procedure": "Add scallions, parsley, garlic, feta, and lemon juice to shredded zucchini",
+        "step": "6"
+      },
+      {
+        "procedure": "MAKE BATTER SEPARATELY:",
+        "step": "7"
+      },
+      {
+        "procedure": "Place flour, S&P, and baking powder in a large bowl",
+        "step": "8"
+      },
+      {
+        "procedure": "Mix in liquid egg thoroughly",
+        "step": "9"
+      },
+      {
+        "procedure": "Mix batter thoroughly into zucchini mixture",
+        "step": "10"
+      }
+    ],
+    "notes": [
+      {
+        "note": "Add more flour to final mix to get to proper consistency",
+        "id": "1"
+      }
+    ]
+  },
+  {
+    "name": "Fritter Sauce",
+    "category": "sauces",
+    "pageslug": "frittersauce",
+    "ingredients": [
+      {
+        "ingredient": "Yoghurt",
+        "measurement": "jar",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Horseradish",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Garlic - Chopped",
+        "measurement": "tsp",
+        "amountslow": "8",
+        "amountbusy": "16",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Lemon Juice",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Parsley",
+        "measurement": "Tbs",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "tsp",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Fine chop parsley",
+        "step": "1"
+      },
+      {
+        "procedure": "Add all ingredients to yoghurt, mix thoroughly",
+        "step": "2"
+      }
+    ]
+  },
+  {
+    "name": "Egg Wash",
+    "category": "misc",
+    "pageslug": "eggwash",
+    "ingredients": [
+      {
+        "ingredient": "Liquid Egg",
+        "measurement": "quart",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3"
+      },
+      {
+        "ingredient": "Buttermilk",
+        "measurement": "quart",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "6"
+      },
+      {
+        "ingredient": "Tabasco",
+        "measurement": "jar",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Mustard - Dijon",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Poultry Seasoning",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "quart",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "3"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Place liquid egg, tabasco, and mustard in big cambro",
+        "step": "1"
+      },
+      {
+        "procedure": "Slowly whisk in poultry seasoning",
+        "step": "2"
+      },
+      {
+        "procedure": "Whisk in remaining buttermilk and water",
+        "step": "3"
+      }
+    ]
+  },
+  {
+    "name": "Pulled Pork",
+    "category": "meats",
+    "pageslug": "pulledpork",
+    "ingredients": [
+      {
+        "ingredient": "Pork Shoulder",
+        "measurement": "each",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      },
+      {
+        "ingredient": "Mustard - House",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      },
+      {
+        "ingredient": "Coriander Seed",
+        "measurement": "Tbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "8"
+      },
+      {
+        "ingredient": "Juniper Seed",
+        "measurement": "Tbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "8"
+      },
+      {
+        "ingredient": "Saison Completo",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      },
+      {
+        "ingredient": "Onion - White",
+        "measurement": "each",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Garlic - Whole Coves",
+        "measurement": "each",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "12"
+      },
+      {
+        "ingredient": "Vienna Beer",
+        "measurement": "cup",
+        "amountslow": "8",
+        "amountbusy": "16",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - Apple Cider",
+        "measurement": "cup",
+        "amountslow": "4",
+        "amountbusy": "8",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "1"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Rough chop onions",
+        "step": "1"
+      },
+      {
+        "procedure": "Split everything between two deep hotel pans",
+        "step": "2"
+      },
+      {
+        "procedure": "Cook overnight at 250 in regular oven",
+        "step": "3"
+      }
+    ],
+    "notes": [
+      {
+        "note": "The slow and busy amounts for the two liquids are determined by how much pork gravy is on hand",
+        "id": "1"
+      },
+      {
+        "note": "If some pork gravy needs to be made, use busy amount for the liquids",
+        "id": "2"
+      },
+      {
+        "note": "If there's a bunch, use slow amount for the liquids",
+        "id": "3"
+      }
+    ]
+  },
+  {
+    "name": "Pulled Pork Gravy",
+    "category": "sauces",
+    "pageslug": "pulledporkgravy",
+    "ingredients": [
+      {
+        "ingredient": "Braising Liquid",
+        "measurement": "quart",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "8"
+      },
+      {
+        "ingredient": "Mustard - House",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "4"
+      },
+      {
+        "ingredient": "Coriander - Ground",
+        "measurement": "Tbs",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Cornstarch",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "cup",
+        "amountslow": "",
+        "amountbusy": "",
+        "amountstandard": "2"
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Remove congealed fat from braising liquid",
+        "step": "1"
+      },
+      {
+        "procedure": "Put in pot with coriander and bring to a boil",
+        "step": "2"
+      },
+      {
+        "procedure": "Simmer about 30 minutes",
+        "step": "3"
+      },
+      {
+        "procedure": "Whisk in house mustard",
+        "step": "4"
+      },
+      {
+        "procedure": "Whisk in slurry of cornstarch and water",
+        "step": "5"
+      }
+    ]
+  },
+  {
+    "name": "Pork Belly Liquid",
+    "category": "misc",
+    "pageslug": "porkbellyliquid",
+    "ingredients": [
+      {
+        "ingredient": "Pilsner Beer",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Dunkel Beer",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Helles Beer",
+        "measurement": "cup",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Orange Juice",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Garlic - Whole Cloves",
+        "measurement": "each",
+        "amountslow": "16",
+        "amountbusy": "32",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Smoked Paprika",
+        "measurement": "cup",
+        "amountslow": "1/4",
+        "amountbusy": "1/2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Smokehouse Seasoning",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "Tbs",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Mix together all ingredients",
+        "step": "1"
+      }
+    ]
+  },
+  {
+    "name": "Pork Belly",
+    "category": "meats",
+    "pageslug": "porkbelly",
+    "ingredients": [
+      {
+        "ingredient": "Pork Belly",
+        "measurement": "each",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Portion pork belly and score skin side",
+        "step": "1"
+      },
+      {
+        "procedure": "Add pork belly cooking liqid",
+        "step": "2"
+      },
+      {
+        "procedure": "Roast, sealed, on 350 oven for 90 minutes",
+        "step": "3"
+      },
+      {
+        "procedure": "Remove seal and brush pork belly with pork belly maple glaze",
+        "step": "4"
+      },
+      {
+        "procedure": "Return to oven, uncovered, for 15 minutes",
+        "step": "5"
+      },
+      {
+        "procedure": "Brush again with maple glaze before cooling in walk-in",
+        "step": "6"
+      }
+    ]
+  },
+  {
+    "name": "Pork Belly Maple Glaze",
+    "category": "misc",
+    "pageslug": "porkbellymapleglaze",
+    "ingredients": [
+      {
+        "ingredient": "Maple Syrup",
+        "measurement": "cup",
+        "amountslow": "6",
+        "amountbusy": "12",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Coriander Seeds",
+        "measurement": "cup",
+        "amountslow": "5",
+        "amountbusy": "10",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Cayenne Pepper",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Ginger Powder",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Hot Paprika",
+        "measurement": "tsp",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Smokehouse Seasoning",
+        "measurement": "Tbs",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Red Pepper Flakes",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "Tbs",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Place all ingredients in a pot and bring to a boil",
+        "step": "1"
+      },
+      {
+        "procedure": "Take off heat and let steep for about an hour",
+        "step": "2"
+      },
+      {
+        "procedure": "Heat a bit to thin, then strain",
+        "step": "3"
       }
     ]
   }
