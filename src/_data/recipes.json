@@ -1159,7 +1159,7 @@
     "pageslug": "fritterbatter",
     "ingredients": [
       {
-        "ingredient": "Zucchinis",
+        "ingredient": "Brussel Sprouts",
         "measurement": "lbs",
         "amountslow": "8",
         "amountbusy": "16",
@@ -1245,44 +1245,32 @@
     ],
     "procedures": [
       {
-        "procedure": "Shred zucchini with coarse grind of robot coupe",
+        "procedure": "Cut off bottoms and cut in half brussel sprouts, then feed through slicer in robot coupe",
         "step": "1"
       },
       {
-        "procedure": "Toss with salt and sugar",
+        "procedure": "Chop scallions and parsley, crumble feta cheese",
         "step": "2"
       },
       {
-        "procedure": "Place in perforated hotel pan, with weight on top, overnight in walk-in",
+        "procedure": "Add scallions, parsley, garlic, feta, and lemon juice to shredded brussel sprouts",
         "step": "3"
       },
       {
-        "procedure": "NEXT DAY:",
+        "procedure": "MAKE BATTER SEPARATELY:",
         "step": "4"
       },
       {
-        "procedure": "Chop scallions and parsley, crumble feta cheese",
+        "procedure": "Place flour, S&P, and baking powder in a large bowl",
         "step": "5"
       },
       {
-        "procedure": "Add scallions, parsley, garlic, feta, and lemon juice to shredded zucchini",
+        "procedure": "Mix in liquid egg thoroughly",
         "step": "6"
       },
       {
-        "procedure": "MAKE BATTER SEPARATELY:",
+        "procedure": "Mix batter thoroughly into brussel sprout mixture",
         "step": "7"
-      },
-      {
-        "procedure": "Place flour, S&P, and baking powder in a large bowl",
-        "step": "8"
-      },
-      {
-        "procedure": "Mix in liquid egg thoroughly",
-        "step": "9"
-      },
-      {
-        "procedure": "Mix batter thoroughly into zucchini mixture",
-        "step": "10"
       }
     ],
     "notes": [
