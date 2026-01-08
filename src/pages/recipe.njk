@@ -48,14 +48,14 @@ eleventyComputed:
   <section class="recipe-panel" data-target="proc">
     <ol class="recipe-procedure-list">
       {% for procedure in recipe.procedures %}
-      <li class="recipe-procedure">{{ procedure.procedure }}</li>
+        <li class="recipe-procedure">{{ procedure.procedure }}</li>
       {% endfor %}
     </ol>
   </section>
   <section class="recipe-panel" data-target="no">
     <ul class="recipe-note-list">
       {% for note in recipe.notes %}
-      <li class="recipe-note">{{ note.note }}</li>
+        <li class="recipe-note">{{ note.note }}</li>
       {% endfor %}
     </ul></section>
 </panels-row>
