@@ -30,15 +30,15 @@ eleventyComputed:
   </div>
 
 
-    {% for ingredient in recipe.ingredients %}
-      <div class="recipe-ingredients">
-        <p>{{ ingredient.ingredient }}</p>
-        <p>{{ ingredient.amountstandard }}</p>
-        <p>{{ ingredient.amountslow }}</p>
-        <p>{{ ingredient.amountbusy }}</p>
-        <p>{{ ingredient.measurement }}</p>
-      </div>
-    {% endfor %}
+  {% for ingredient in recipe.ingredients %}
+    <div class="recipe-ingredients">
+      <p>{{ ingredient.ingredient }}</p>
+      <p>{{ ingredient.amountstandard }}</p>
+      <p>{{ ingredient.amountslow }}</p>
+      <p>{{ ingredient.amountbusy }}</p>
+      <p>{{ ingredient.measurement }}</p>
+    </div>
+  {% endfor %}
 </section>
 
 <panels-row class="recipe-panels">
