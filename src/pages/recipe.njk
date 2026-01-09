@@ -20,8 +20,27 @@ eleventyComputed:
   <button class="recipe-button" data-source="no">Notes</button>
 </buttons-row>
 
-<section class="recipe-panel recipe-panel-ingredients" data-target="ing">
-  <table class="recipe-table">
+<section class="recipe-section" data-target="ing">
+
+  <div class="recipe-top">
+    <p class="recipe-top-standard">Standard</p>
+    <p class="recipe-top-slow">Slow</p>
+    <p class="recipe-top-busy">Busy</p>
+    <p class="recipe-top-measure">Measure</p>
+  </div>
+
+
+    {% for ingredient in recipe.ingredients %}
+  <div class="recipe-ingredients">
+      <p>{{ ingredient.ingredient }}</p>
+      <p>{{ ingredient.amountstandard }}</p>
+      <p>{{ ingredient.amountslow }}</p>
+      <p>{{ ingredient.amountbusy }}</p>
+      <p>{{ ingredient.measurement }}</p>
+  </div>
+    {% endfor %}
+
+  {# <table class="recipe-table">
     <tbody>
       <tr class="recipe-table-header">
         <th style="width:40%"></th>
@@ -40,7 +59,7 @@ eleventyComputed:
           <td>{{ ingredient.measurement }}</td>
         </tr>
       {% endfor %}
-    </tbody>
+    </tbody> #}
   </table>
 </section>
 
