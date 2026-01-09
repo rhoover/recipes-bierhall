@@ -31,36 +31,14 @@ eleventyComputed:
 
 
     {% for ingredient in recipe.ingredients %}
-  <div class="recipe-ingredients">
-      <p>{{ ingredient.ingredient }}</p>
-      <p>{{ ingredient.amountstandard }}</p>
-      <p>{{ ingredient.amountslow }}</p>
-      <p>{{ ingredient.amountbusy }}</p>
-      <p>{{ ingredient.measurement }}</p>
-  </div>
+      <div class="recipe-ingredients">
+        <p>{{ ingredient.ingredient }}</p>
+        <p>{{ ingredient.amountstandard }}</p>
+        <p>{{ ingredient.amountslow }}</p>
+        <p>{{ ingredient.amountbusy }}</p>
+        <p>{{ ingredient.measurement }}</p>
+      </div>
     {% endfor %}
-
-  {# <table class="recipe-table">
-    <tbody>
-      <tr class="recipe-table-header">
-        <th style="width:40%"></th>
-        <th style="width:18%">Standard</th>
-        <th style="width:14%">Slow</th>
-        <th style="width:14%">Busy</th>
-        <th style="width:14%">Measure</th>
-      </tr>
-      <tr style="height: 16px;"></tr>
-      {% for ingredient in recipe.ingredients %}
-        <tr class="recipe-table-row">
-          <td class="recipe-table-row-ingredient">{{ ingredient.ingredient }}</td>
-          <td class="recipe-table-row-standard">{{ ingredient.amountstandard }}</td>
-          <td>{{ ingredient.amountslow }}</td>
-          <td>{{ ingredient.amountbusy }}</td>
-          <td>{{ ingredient.measurement }}</td>
-        </tr>
-      {% endfor %}
-    </tbody> #}
-  </table>
 </section>
 
 <panels-row class="recipe-panels">
