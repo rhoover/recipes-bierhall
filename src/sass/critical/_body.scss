@@ -2,20 +2,10 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(16px, 1fr) minmax(auto, 1120px) minmax(16px, 1fr);
-  grid-template-rows: auto 1fr auto;
   font-family: "atkinson", sans-serif;
 
-  & > header {
-    grid-row: 1 / 2;
-  }
-
   & > main {
-    grid-row: 2 / 3;
     padding-top: 80px;
-  }
-
-  & > footer {
-    grid-row: 3 / 4;
   }
 
   & > * {
