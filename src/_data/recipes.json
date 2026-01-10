@@ -1756,5 +1756,132 @@
         "step": "3"
       }
     ]
+  },
+  {
+    "name": "Corn Relish",
+    "category": "vegetables",
+    "pageslug": "cornrelish",
+    "ingredients": [
+      {
+        "ingredient": "Corn",
+        "measurement": "bag",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Bell Pepper - Red",
+        "measurement": "cup",
+        "amountslow": "1-1/2",
+        "amountbusy": "3",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Pepper - Poblano",
+        "measurement": "cup",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Onion - Yellow",
+        "measurement": "cup",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Vinegar - White",
+        "measurement": "cup",
+        "amountslow": "2-1/2",
+        "amountbusy": "5",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Sugar",
+        "measurement": "cup",
+        "amountslow": "1-1/4",
+        "amountbusy": "2-1/2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Mustard Powder",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Coriander Seed",
+        "measurement": "tsp",
+        "amountslow": "1",
+        "amountbusy": "2",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Celery Seed",
+        "measurement": "tsp",
+        "amountslow": "1/2",
+        "amountbusy": "1",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "S&P Blend",
+        "measurement": "tsp",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Cornstarch",
+        "measurement": "Tbs",
+        "amountslow": "2",
+        "amountbusy": "4",
+        "amountstandard": ""
+      },
+      {
+        "ingredient": "Water",
+        "measurement": "cup",
+        "amountslow": "1/4",
+        "amountbusy": "1/2",
+        "amountstandard": ""
+      }
+    ],
+    "procedures": [
+      {
+        "procedure": "Small Dice red pepper, poblano pepper, onion, and mix with corn",
+        "step": "1"
+      },
+      {
+        "procedure": "In a stock pot, place vinegar, sugar, mustard, coriander, celery, S&P, and bring to a boil",
+        "step": "2"
+      },
+      {
+        "procedure": "Add corn-veg mix to stock pot and bring back up to a boil",
+        "step": "3"
+      },
+      {
+        "procedure": "Make a cornstarch-water slurry and add to stock pot of hot corn mix",
+        "step": "4"
+      },
+      {
+        "procedure": "Stir until thick, ~2 minutes",
+        "step": "5"
+      },
+      {
+        "procedure": "Spread on sheet tray for rapid cooling",
+        "step": "6"
+      }
+    ],
+    "notes": [
+      {
+        "note": "If using fresh corn, 12 ears equals one bag of frozen",
+        "id": "1"
+      },
+      {
+        "note": "It is not necessary to thaw the bags of frozen corn",
+        "id": "2"
+      }
+    ]
   }
 ]
