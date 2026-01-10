@@ -1,12 +1,9 @@
-// this is a sticky header and sticky footer implmentation
-// https://css-tricks.com/how-to-use-css-grid-for-sticky-headers-and-footers/
-
 body {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(16px, 1fr) minmax(auto, 1120px) minmax(16px, 1fr);
   grid-template-rows: auto 1fr auto;
-  font-family: "assistant", sans-serif;
+  font-family: "atkinson", sans-serif;
 
   & > header {
     grid-row: 1 / 2;
