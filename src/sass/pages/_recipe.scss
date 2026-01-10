@@ -4,9 +4,11 @@
 
 
 .recipe {
+  padding-top: 112px;
   &-header {
     margin-bottom: 32px;
     padding: 8px;
+    border-top: 1px solid rgba(core.colorfunction(green, base), 0.95);
     border-bottom: 1px solid rgba(core.colorfunction(green, base), 0.95);
   }
   &-buttons {
