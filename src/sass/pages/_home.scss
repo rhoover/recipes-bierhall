@@ -4,7 +4,7 @@
 
 .home {
   display: grid;
-  grid-template-rows: 10% 1fr;
+  grid-template-rows: 25% 1fr;
   row-gap: 32px;
   height: 80vh;
   &-login {
@@ -14,6 +14,8 @@
       @extend %recipe-buttons;
       padding: 0px;
       font-size: var(--step-h3);
+      height: 50%;
+      align-self: center;
       &-in {
         opacity: .75;
       }
