@@ -27,10 +27,6 @@
     border-radius: 8px;
     background-color: rgba(core.colorfunction(green, base), 0.15);
     font-size: var(--step-h5);
-    &-active {
-      font-weight: 700;
-      background-color: rgba(core.colorfunction(green, base), 0.55);
-    }
   }
   &-panel {
     display: none;
@@ -122,6 +118,23 @@
     font-size: var(--step-h5);
     &-list {
       margin-top: 16px;
+    }
+  }
+  &-dialog {
+    &-procedure {
+      @extend %dialog;
+      &-close {
+        @extend %recipe-buttons;
+      }
+    }
+    &-notes {
+      @extend %dialog;
+      &-close {
+        @extend %recipe-buttons;
+      }
+      &-nothing {
+        font-size: var(--step-h4);
+      }
     }
   }
 }

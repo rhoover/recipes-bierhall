@@ -16,8 +16,8 @@ eleventyComputed:
 
 <buttons-row class="recipe-buttons">
   {# <button class="recipe-button recipe-button-active" data-source="ing">Ingredients</button> #}
-  <button class="recipe-button" data-source="proc">Procedures</button>
-  <button class="recipe-button" data-source="no">Notes</button>
+  <button class="recipe-button" data-source="procedure">Procedures</button>
+  <button class="recipe-button" data-source="notes">Notes</button>
 </buttons-row>
 
 <section class="recipe-section" data-target="ing">
@@ -40,7 +40,7 @@ eleventyComputed:
   {% endfor %}
 </section>
 
-<panels-row class="recipe-panels">
+{# <panels-row class="recipe-panels">
   <section class="recipe-panel" data-target="proc">
     <ol class="recipe-procedure-list">
       {% for procedure in recipe.procedures %}
@@ -54,7 +54,26 @@ eleventyComputed:
         <li class="recipe-note">{{ note.note }}</li>
       {% endfor %}
     </ul></section>
-</panels-row>
+</panels-row> #}
+
+<section class="recipe-dialogs">
+  <dialog class="recipe-dialog-procedure">
+    <button class="recipe-dialog-procedure-close" data-source="procedure-close">Close</button>
+    <ol class="recipe-procedure-list">
+      {% for procedure in recipe.procedures %}
+        <li class="recipe-procedure">{{ procedure.procedure }}</li>
+      {% endfor %}
+    </ol>
+  </dialog>
+  <dialog class="recipe-dialog-notes">
+    <button class="recipe-dialog-notes-close" data-source="notes-close">Close</button>
+    <ul class="recipe-note-list">
+      {% for note in recipe.notes %}
+        <li class="recipe-note">{{ note.note }}</li>
+      {% endfor %}
+    </ul>
+  </dialog>
+</section>
 
 {% include "components/scroll-button.njk" %}
 

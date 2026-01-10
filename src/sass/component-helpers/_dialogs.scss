@@ -1,28 +1,41 @@
 @use "../core" as core;
-@use "../helpers" as helpers;
 
 %dialog {
-  position: absolute;
-  // width: 95VW;
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  column-gap: 16px;
-  background-color: core.colorfunction(white, light75);
+  opacity: 1;
+  scale: 1;
+  transition: 
+    opacity 0.2s ease-out,
+    scale 0.2s ease-out,
+    overlay 0.2s ease-out allow-discrete,
+    display 0.2s ease-out allow-discrete;
+    height: 75vh;
+    overflow: scroll;
   border: 1px solid core.colorfunction(green, base);
   border-radius: 10.4px;
-  margin: 0px;
-  top: 32px;
-  transform: translateX(-105%);
-  @extend %animate-helper;
-  &[open] {
-    transform: translateX(5%);
+
+  &:not([open]) {
+    opacity: 0;
+    scale: 0.90;
     &::backdrop {
-      animation: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards show-backdrop;
+      background-color: rgba(0, 0, 255, 0);
     }
   }
+
+  @starting-style {
+    opacity: 0;
+    scale: 0.90;
+  }
+
+  /* now do backdrop */
   &::backdrop {
-    background: rgba(core.colorfunction(blue, base), 0.35);
+    background-color: rgba(core.colorfunction(green, base), 0.10);
     backdrop-filter: blur(0.2rem);
+    transition: 
+      background-color 0.2s ease-out,
+      overlay 0.2s ease-out allow-discrete,
+      display 0.2s ease-out allow-discrete;
+    @starting-style {
+      background-color: rgba(0, 0, 255, 0);
+    }
   }
 }
